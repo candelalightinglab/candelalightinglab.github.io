@@ -24,3 +24,6 @@ _incoming/
 *.xlsx
 *.docx
 *.pptx
+
+# 로컬 프리뷰(Jekyll 미설치 환경용)
+_preview-*.html
