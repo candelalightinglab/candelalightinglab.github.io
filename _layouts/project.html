@@ -3,29 +3,23 @@ layout: default
 ---
 {% assign pr = site.data.projects | where: "slug", page.slug | first %}
 <article class="project">
-  <section class="project-hero" style="--cover: url('{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}')">
-    <div class="project-hero-inner">
-      <p class="eyebrow">{{ pr.category }} · {{ pr.location }}</p>
-      <h1>{{ pr.title_en }}</h1>
-      <p class="project-krtitle">{{ pr.title_kr }}</p>
-    </div>
-  </section>
-
-  <div class="wrap project-intro">
+  <header class="proj-head wrap">
+    <span class="kicker">{{ pr.category }} · {{ pr.location }}</span>
+    <h1>{{ pr.title_en }}</h1>
+    <p class="kr">{{ pr.title_kr }}</p>
     <p class="lede">{{ pr.blurb }}</p>
-    <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
-  </div>
+  </header>
 
-  <section class="gallery wrap">
+  <section class="proj-figs wrap">
     {% for img in pr.images %}
-    <figure class="gallery-item">
+    <figure class="full reveal">
       <img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: img | relative_url }}"
            alt="{{ pr.title_en }} — lighting {{ forloop.index }}">
     </figure>
     {% endfor %}
   </section>
 
-  <nav class="project-foot wrap">
-    <a class="back-link" href="{{ '/projects/' | relative_url }}">← Back to all projects</a>
+  <nav class="proj-nav">
+    <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
   </nav>
 </article>

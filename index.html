@@ -2,36 +2,45 @@
 layout: default
 body_class: home
 ---
-{% assign hero = site.data.projects | where: "slug", "seoul-craft-museum" | first %}
-<section class="hero" style="--cover: url('{{ '/assets/images/projects/seoul-craft-museum/' | append: hero.cover | relative_url }}')">
-  <div class="hero-inner">
-    <p class="eyebrow">Architectural · Museum · Exhibition Lighting</p>
-    <h1>Light that reveals<br>the object.</h1>
+{% assign heroes = "seoul-craft-museum|medeonggol-garden|us-jazz-lincoln-center|us-clinton-presidential-center" | split: "|" %}
+<section class="hero" data-hero>
+  {% for slug in heroes %}
+    {% assign pr = site.data.projects | where: "slug", slug | first %}
+    <div class="hero-slide{% if forloop.first %} is-on{% endif %}"
+         style="background-image:url('{{ '/assets/images/projects/' | append: slug | append: '/' | append: pr.cover | relative_url }}')"></div>
+  {% endfor %}
+  <div class="hero-scrim"></div>
+  <div class="hero-cap">
+    <span class="kicker">Architectural · Museum · Exhibition Lighting</span>
+    <h1>Light that reveals the object.</h1>
     <p class="sub">캔델라 건축조명연구소 — 백승주 소장의 건축·박물관·전시 조명 디자인 스튜디오.</p>
-    <a class="cta" href="{{ '/projects/' | relative_url }}">View Projects →</a>
+  </div>
+  <div class="hero-dots" role="tablist" aria-label="Featured projects">
+    {% for slug in heroes %}<button type="button" aria-label="Slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
   </div>
 </section>
 
-<section class="section preview wrap">
+<section class="intro wrap-narrow reveal">
+  <span class="kicker">Candela Lighting Lab</span>
+  <h2>박물관·전시·건축 공간의 빛을 설계합니다.</h2>
+  <p>유물과 공간이 스스로 말하도록, 빛은 절제됩니다. Led by Seungjoo Baik — MFA in Lighting, Parsons School of Design; formerly of Cline Bettridge Bernstein Lighting Design, New York.</p>
+  <a class="btn-line" href="{{ '/about/' | relative_url }}">About the studio</a>
+</section>
+
+<section class="section wrap reveal">
   <div class="section-head">
-    <h2>Recent Work — Korea</h2>
-    <span class="meta">국내 최신작</span>
+    <h2>Selected Work</h2>
+    <span class="count">Korea</span>
   </div>
-  <div class="grid">
+  <div class="tiles">
     {% assign kr = site.data.projects | where: "region", "kr" %}
     {% assign shown = 0 %}
-    {% for pr in kr %}
-      {% unless pr.draft %}{% if shown < 6 %}
-      <a class="card" href="{{ '/projects/' | append: pr.slug | append: '/' | relative_url }}">
-        <div class="card-media"><img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}" alt="{{ pr.title_en }}"></div>
-        <div class="card-body">
-          <span class="cat">{{ pr.category }}</span>
-          <h3>{{ pr.title_en }}</h3>
-          <p class="kr">{{ pr.title_kr }}</p>
-        </div>
-      </a>
-      {% assign shown = shown | plus: 1 %}{% endif %}{% endunless %}
-    {% endfor %}
+    {% for pr in kr %}{% unless pr.draft %}{% if shown < 6 %}
+      {% include tile.html pr=pr %}
+      {% assign shown = shown | plus: 1 %}
+    {% endif %}{% endunless %}{% endfor %}
   </div>
-  <p style="margin-top:2.5rem"><a class="cta" href="{{ '/projects/' | relative_url }}" style="color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:.82rem">All projects — Korea &amp; New York →</a></p>
+  <p style="text-align:center;margin-top:clamp(2rem,5vw,3.5rem)">
+    <a class="btn-line" href="{{ '/projects/' | relative_url }}">All projects — Korea &amp; New York</a>
+  </p>
 </section>

@@ -5,50 +5,29 @@ permalink: /projects/
 description: Museum, exhibition, architectural and landscape lighting projects in Korea and the United States.
 ---
 <div class="wrap page-head">
+  <span class="kicker">Selected Work · 2000—2026</span>
   <h1>Projects</h1>
   <p>박물관·전시·건축·조경 조명. 국내 최신작을 중심으로, 뉴욕 CBB 시절의 과거작을 함께 소개합니다.</p>
 </div>
 
-<section class="section wrap" style="padding-top:0">
+<section class="section wrap reveal" style="padding-top:clamp(1rem,3vw,2rem)">
   <div class="section-head">
     <h2>Recent Work — Korea</h2>
-    <span class="meta">국내 · Museum / Exhibition / Architecture</span>
+    <span class="count">Museum / Exhibition / Architecture</span>
   </div>
-  <div class="grid">
+  <div class="tiles">
     {% assign kr = site.data.projects | where: "region", "kr" %}
-    {% for pr in kr %}{% unless pr.draft %}
-      <a class="card" href="{{ '/projects/' | append: pr.slug | append: '/' | relative_url }}">
-        <div class="card-media"><img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}" alt="{{ pr.title_en }}"></div>
-        <div class="card-body">
-          <span class="cat">{{ pr.category }}</span>
-          <h3>{{ pr.title_en }}</h3>
-          <p class="kr">{{ pr.title_kr }}</p>
-          <p class="loc">{{ pr.location }}</p>
-        </div>
-      </a>
-    {% endunless %}{% endfor %}
+    {% for pr in kr %}{% unless pr.draft %}{% include tile.html pr=pr %}{% endunless %}{% endfor %}
   </div>
 </section>
 
-<hr class="rule wrap" style="max-width:var(--maxw)">
-
-<section class="section wrap">
+<section class="section wrap reveal">
   <div class="section-head">
     <h2>New York / USA — with CBB</h2>
-    <span class="meta">Cline Bettridge Bernstein Lighting Design 시절</span>
+    <span class="count">Cline Bettridge Bernstein Lighting Design</span>
   </div>
-  <div class="grid">
+  <div class="tiles">
     {% assign us = site.data.projects | where: "region", "us" %}
-    {% for pr in us %}{% unless pr.draft %}
-      <a class="card" href="{{ '/projects/' | append: pr.slug | append: '/' | relative_url }}">
-        <div class="card-media"><img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}" alt="{{ pr.title_en }}"></div>
-        <div class="card-body">
-          <span class="cat">{{ pr.category }}</span>
-          <h3>{{ pr.title_en }}</h3>
-          <p class="kr">{{ pr.title_kr }}</p>
-          <p class="loc">{{ pr.location }}</p>
-        </div>
-      </a>
-    {% endunless %}{% endfor %}
+    {% for pr in us %}{% unless pr.draft %}{% include tile.html pr=pr %}{% endunless %}{% endfor %}
   </div>
 </section>

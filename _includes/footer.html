@@ -1,18 +1,15 @@
 <footer class="site-footer">
-  <div class="foot-grid">
-    <div class="foot-brand">
+  <div class="foot-inner">
+    <a class="foot-brand" href="{{ '/' | relative_url }}">
       <img src="{{ '/assets/images/brand/candela-logo-1600.png' | relative_url }}" alt="Candela Lighting Lab">
-      <p>{{ site.tagline }}</p>
-    </div>
+    </a>
     <nav class="foot-nav" aria-label="Footer">
       <a href="{{ '/projects/' | relative_url }}">Projects</a>
       <a href="{{ '/expertise/' | relative_url }}">Expertise</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
-    <div class="foot-contact">
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-    </div>
+    <a class="foot-mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
   </div>
-  <p class="foot-copy">© {{ 'now' | date: "%Y" }} Candela Lighting Lab · Seungjoo Baik. All rights reserved.</p>
+  <p class="foot-copy">© {{ 'now' | date: "%Y" }} Candela Lighting Lab · Seungjoo Baik</p>
 </footer>
