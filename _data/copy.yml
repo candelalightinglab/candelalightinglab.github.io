@@ -11,10 +11,10 @@ home:
   # Hero slideshow images (edit here only). project = _projects file name,
   #  image = a file inside assets/images/projects/<project>/. Add/remove/reorder freely.
   hero_slides:
-    - { project: seoul-craft-museum,          image: seoul-craft-museum-01.jpg }
+    - { project: kyunggi-girls-centennial,          image: kyunggi-girls-centennial-03.jpg }
     - { project: medeonggol-garden,           image: medeonggol-garden-01.jpg }
-    - { project: us-jazz-lincoln-center,      image: us-jazz-lincoln-center-01.jpg }
-    - { project: us-clinton-presidential-center, image: us-clinton-presidential-center-01.jpg }
+    - { project: jcc-art-center,      image: jcc-art-center-01.jpg }
+    - { project: shinhan-finance-museum, image: shinhan-finance-museum-01.jpg }
   intro_kicker: "Candela Lighting Lab"
   intro_heading: "Lighting for museums, exhibitions and architecture."
   intro_body: "Light is kept restrained, so that objects and spaces speak for themselves. Led by Seungjoo Baik — MFA in Lighting, Parsons School of Design; formerly of Cline Bettridge Bernstein Lighting Design, New York."
