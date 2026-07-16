@@ -15,6 +15,7 @@ images:
   - kyunggi-girls-centennial-04.jpg
   - kyunggi-girls-centennial-05.jpg
   - kyunggi-girls-centennial-06.jpg
+  - kyunggi-girls-centennial-07.jpg
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
