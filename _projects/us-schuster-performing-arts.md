@@ -14,5 +14,7 @@ images:
   - us-schuster-performing-arts-03.jpg
 ---
 
-<!-- The text below is this project's description. Edit freely (Markdown ok). -->
+<!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
+     여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
+     This description appears below the image gallery. -->
 A wintergarden atrium and a fiber-optic star ceiling for the performance hall.
