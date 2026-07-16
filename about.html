@@ -4,14 +4,15 @@ title: About
 permalink: /about/
 description: Seungjoo Baik — Architectural Lighting Design Consultant, Principal of Candela Lighting Lab.
 ---
+{% assign c = site.data.copy.about %}
 <div class="wrap page-head">
-  <span class="kicker">Studio · Seungjoo Baik</span>
+  <span class="kicker">{{ c.kicker }}</span>
   <h1>About</h1>
-  <p>Candela Lighting Lab designs lighting for architecture, museums and exhibitions. Light is kept restrained, so that objects and spaces speak for themselves.</p>
+  <p>{{ c.intro }}</p>
 </div>
 
 <div class="wrap-narrow prose reveal">
-  <p class="lede-p">Candela Lighting Lab designs lighting for architecture, museums and exhibitions — led by <b>Seungjoo Baik</b>, Architectural Lighting Design Consultant. Seungjoo trained at Parsons School of Design (MFA in Lighting) and practiced in New York with Cline Bettridge Bernstein Lighting Design before founding the studio in Seoul.</p>
+  <div class="lede-p">{{ c.lede | markdownify }}</div>
 
   <div class="two-col" style="margin-top:clamp(2.5rem,6vw,4rem)">
     <dl class="cv-block">

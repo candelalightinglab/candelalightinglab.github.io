@@ -1,24 +1,33 @@
----
-layout: default
----
-{% assign pr = site.data.projects | where: "slug", page.slug | first %}
-<article class="project">
-  <header class="proj-head wrap">
-    <span class="kicker">{{ pr.category }} · {{ pr.location }}</span>
-    <h1>{{ pr.title_en }}</h1>
-    <p class="lede">{{ pr.blurb }}</p>
-  </header>
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include nav.html %}
+  <main id="main">
+    <article class="project">
+      <header class="proj-head wrap">
+        <span class="kicker">{{ page.category }} · {{ page.location }}</span>
+        <h1>{{ page.title }}</h1>
+        <div class="lede">{{ content }}</div>
+      </header>
 
-  <section class="proj-figs wrap">
-    {% for img in pr.images %}
-    <figure class="full reveal">
-      <img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: img | relative_url }}"
-           alt="{{ pr.title_en }} — lighting {{ forloop.index }}">
-    </figure>
-    {% endfor %}
-  </section>
+      <section class="proj-figs wrap">
+        {% for img in page.images %}
+        <figure class="full reveal">
+          <img loading="lazy" src="{{ '/assets/images/projects/' | append: page.slug | append: '/' | append: img | relative_url }}"
+               alt="{{ page.title }} — lighting {{ forloop.index }}">
+        </figure>
+        {% endfor %}
+      </section>
 
-  <nav class="proj-nav">
-    <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
-  </nav>
-</article>
+      <nav class="proj-nav">
+        <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
+      </nav>
+    </article>
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+</body>
+</html>

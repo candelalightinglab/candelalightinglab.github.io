@@ -4,10 +4,11 @@ title: Projects
 permalink: /projects/
 description: Museum, exhibition, architectural and landscape lighting projects in Korea and the United States.
 ---
+{% assign c = site.data.copy.projects %}
 <div class="wrap page-head">
-  <span class="kicker">Selected Work · 2000—2026</span>
+  <span class="kicker">{{ c.kicker }}</span>
   <h1>Projects</h1>
-  <p>Museum, exhibition, architectural and landscape lighting — recent work in Korea alongside earlier projects from the New York (CBB) years.</p>
+  <p>{{ c.intro }}</p>
 </div>
 
 <section class="section wrap reveal" style="padding-top:clamp(1rem,3vw,2rem)">
@@ -16,7 +17,7 @@ description: Museum, exhibition, architectural and landscape lighting projects i
     <span class="count">Museum / Exhibition / Architecture</span>
   </div>
   <div class="tiles">
-    {% assign kr = site.data.projects | where: "region", "kr" %}
+    {% assign kr = site.projects | where: "region", "kr" | sort: "order" %}
     {% for pr in kr %}{% unless pr.draft %}{% include tile.html pr=pr %}{% endunless %}{% endfor %}
   </div>
 </section>
@@ -27,7 +28,7 @@ description: Museum, exhibition, architectural and landscape lighting projects i
     <span class="count">Cline Bettridge Bernstein Lighting Design</span>
   </div>
   <div class="tiles">
-    {% assign us = site.data.projects | where: "region", "us" %}
+    {% assign us = site.projects | where: "region", "us" | sort: "order" %}
     {% for pr in us %}{% unless pr.draft %}{% include tile.html pr=pr %}{% endunless %}{% endfor %}
   </div>
 </section>

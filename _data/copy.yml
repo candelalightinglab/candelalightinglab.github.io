@@ -1,0 +1,33 @@
+# ============================================================
+#  사이트 문구 모음 — 여기서 각 페이지 상단 텍스트를 수정하세요.
+#  Edit all page intro copy here. (마크다운 **굵게** 등 사용 가능)
+#  프로젝트별 '설명'은 여기가 아니라 _projects/<이름>.md 파일에서 수정합니다.
+# ============================================================
+
+home:
+  hero_kicker: "Architectural · Museum · Exhibition Lighting"
+  hero_title: "Light that reveals the object."
+  hero_sub: "Candela Lighting Lab — an architectural, museum and exhibition lighting design studio led by Seungjoo Baik."
+  intro_kicker: "Candela Lighting Lab"
+  intro_heading: "Lighting for museums, exhibitions and architecture."
+  intro_body: "Light is kept restrained, so that objects and spaces speak for themselves. Led by Seungjoo Baik — MFA in Lighting, Parsons School of Design; formerly of Cline Bettridge Bernstein Lighting Design, New York."
+
+projects:
+  kicker: "Selected Work · 2000—2026"
+  intro: "Museum, exhibition, architectural and landscape lighting — recent work in Korea alongside earlier projects from the New York (CBB) years."
+
+about:
+  kicker: "Studio · Seungjoo Baik"
+  intro: "Candela Lighting Lab designs lighting for architecture, museums and exhibitions. Light is kept restrained, so that objects and spaces speak for themselves."
+  lede: "Candela Lighting Lab designs lighting for architecture, museums and exhibitions — led by **Seungjoo Baik**, Architectural Lighting Design Consultant. Seungjoo trained at Parsons School of Design (MFA in Lighting) and practiced in New York with Cline Bettridge Bernstein Lighting Design before founding the studio in Seoul."
+
+expertise:
+  kicker: "Scope of Work"
+  intro: "Architectural, museum and exhibition lighting, and lighting consulting. We define target illuminance, colour temperature and colour rendering precisely, and design light suited to the character of each space."
+  sim_heading: "Calculation & simulation"
+  sim_body: "Target illuminance, colour temperature and colour rendering (CRI) are defined in advance and verified with 3D illuminance simulation."
+
+contact:
+  kicker: "Get in touch"
+  intro: "For project enquiries and collaboration. Architectural, museum & exhibition lighting design."
+  note: "Candela Lighting Lab<br>Seungjoo Baik, Principal"

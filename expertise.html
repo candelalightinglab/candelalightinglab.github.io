@@ -4,10 +4,11 @@ title: Expertise
 permalink: /expertise/
 description: Scope of work — from site research and schematic design to construction administration.
 ---
+{% assign c = site.data.copy.expertise %}
 <div class="wrap page-head">
-  <span class="kicker">Scope of Work</span>
+  <span class="kicker">{{ c.kicker }}</span>
   <h1>Expertise</h1>
-  <p>Architectural, museum and exhibition lighting, and lighting consulting. We define target illuminance, colour temperature and colour rendering precisely, and design light suited to the character of each space.</p>
+  <p>{{ c.intro }}</p>
 </div>
 
 <div class="wrap prose reveal">
@@ -19,8 +20,8 @@ description: Scope of work — from site research and schematic design to constr
     <div class="phase"><span class="n">05</span><h3>Construction Administration</h3><ul><li>Aiming</li><li>Energy evaluation</li><li>Submittal comments</li><li>Control set-up</li></ul></div>
   </div>
 
-  <h2>Calculation &amp; simulation</h2>
-  <p>Target illuminance, colour temperature and colour rendering (CRI) are defined in advance and verified with 3D illuminance simulation.</p>
+  <h2>{{ c.sim_heading }}</h2>
+  <p>{{ c.sim_body }}</p>
   <div class="expertise-figs">
     <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-illuminance-simulation-overview.png' | relative_url }}" alt="3D illuminance simulation"><figcaption>3D rendering + false-colour illuminance simulation</figcaption></figure>
     <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-target-illuminance.png' | relative_url }}" alt="Target illuminance table"><figcaption>Target illuminance (lux)</figcaption></figure>

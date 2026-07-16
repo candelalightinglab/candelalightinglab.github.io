@@ -2,18 +2,19 @@
 layout: default
 body_class: home
 ---
+{% assign c = site.data.copy.home %}
 {% assign heroes = "seoul-craft-museum|medeonggol-garden|us-jazz-lincoln-center|us-clinton-presidential-center" | split: "|" %}
 <section class="hero" data-hero>
   {% for slug in heroes %}
-    {% assign pr = site.data.projects | where: "slug", slug | first %}
+    {% assign pr = site.projects | where: "slug", slug | first %}
     <div class="hero-slide{% if forloop.first %} is-on{% endif %}"
          style="background-image:url('{{ '/assets/images/projects/' | append: slug | append: '/' | append: pr.cover | relative_url }}')"></div>
   {% endfor %}
   <div class="hero-scrim"></div>
   <div class="hero-cap">
-    <span class="kicker">Architectural · Museum · Exhibition Lighting</span>
-    <h1>Light that reveals the object.</h1>
-    <p class="sub">Candela Lighting Lab — an architectural, museum and exhibition lighting design studio led by Seungjoo Baik.</p>
+    <span class="kicker">{{ c.hero_kicker }}</span>
+    <h1>{{ c.hero_title }}</h1>
+    <p class="sub">{{ c.hero_sub }}</p>
   </div>
   <div class="hero-dots" role="tablist" aria-label="Featured projects">
     {% for slug in heroes %}<button type="button" aria-label="Slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
@@ -21,9 +22,9 @@ body_class: home
 </section>
 
 <section class="intro wrap-narrow reveal">
-  <span class="kicker">Candela Lighting Lab</span>
-  <h2>Lighting for museums, exhibitions and architecture.</h2>
-  <p>Light is kept restrained, so that objects and spaces speak for themselves. Led by Seungjoo Baik — MFA in Lighting, Parsons School of Design; formerly of Cline Bettridge Bernstein Lighting Design, New York.</p>
+  <span class="kicker">{{ c.intro_kicker }}</span>
+  <h2>{{ c.intro_heading }}</h2>
+  <p>{{ c.intro_body }}</p>
   <a class="btn-line" href="{{ '/about/' | relative_url }}">About the studio</a>
 </section>
 
@@ -33,7 +34,7 @@ body_class: home
     <span class="count">Korea</span>
   </div>
   <div class="tiles">
-    {% assign kr = site.data.projects | where: "region", "kr" %}
+    {% assign kr = site.projects | where: "region", "kr" | sort: "order" %}
     {% assign shown = 0 %}
     {% for pr in kr %}{% unless pr.draft %}{% if shown < 6 %}
       {% include tile.html pr=pr %}

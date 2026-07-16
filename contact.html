@@ -4,16 +4,17 @@ title: Contact
 permalink: /contact/
 description: Get in touch with Candela Lighting Lab for architectural and museum lighting design.
 ---
+{% assign c = site.data.copy.contact %}
 <div class="wrap page-head">
-  <span class="kicker">Get in touch</span>
+  <span class="kicker">{{ c.kicker }}</span>
   <h1>Contact</h1>
-  <p>For project enquiries and collaboration. Architectural, museum &amp; exhibition lighting design.</p>
+  <p>{{ c.intro }}</p>
 </div>
 
 <div class="wrap prose reveal">
   <div class="contact-card">
     <span class="kicker">Email</span>
     <a class="mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <p class="note">Candela Lighting Lab<br>Seungjoo Baik, Principal</p>
+    <p class="note">{{ c.note }}</p>
   </div>
 </div>

@@ -1,9 +1,9 @@
 {% assign pr = include.pr %}
-<a class="tile{% if include.wide %} wide{% endif %}" href="{{ '/projects/' | append: pr.slug | append: '/' | relative_url }}">
-  <img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}" alt="{{ pr.title_en }}">
+<a class="tile{% if include.wide %} wide{% endif %}" href="{{ pr.url | relative_url }}">
+  <img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}" alt="{{ pr.title }}">
   <span class="tile-scrim"></span>
   <span class="tile-cap">
-    <span class="t">{{ pr.title_en }}</span>
+    <span class="t">{{ pr.title }}</span>
     <span class="meta">{{ pr.category }} · {{ pr.location }}</span>
   </span>
 </a>

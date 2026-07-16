@@ -17,6 +17,15 @@ permalink: pretty
 sass:
   style: compressed
 
+# Projects are edited as one markdown file each under _projects/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+defaults:
+  - scope: { path: "", type: "projects" }
+    values: { layout: "project" }
+
 exclude:
   - _data/photo-curation.md
   - _data/photo-curation-cbb.md
