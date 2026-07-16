@@ -1,0 +1,31 @@
+title: Candela Lighting Lab
+tagline: Architectural & Museum Lighting Design
+description: >-
+  Candela Lighting Lab — 백승주 소장의 건축·박물관/전시 조명 디자인 스튜디오.
+  Architectural, museum and exhibition lighting design by Seungjoo Baik.
+author: Seungjoo Baik
+email: candelalightinglab@gmail.com
+
+# candelalightinglab.github.io (user/org page → 루트 배포)
+url: "https://candelalightinglab.github.io"
+baseurl: ""
+lang: en
+
+# 빌드
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+
+exclude:
+  - _data/photo-curation.md
+  - _data/photo-curation-cbb.md
+  - _data/photo-curation-project-folder.md
+  - _data/photo-curation-portfolio-folder.md
+  - _data/curation-resume-2005backup.md
+  - _data/expertise-and-notes.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache
