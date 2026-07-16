@@ -10,7 +10,7 @@
 - Ehwa Womens University — BFA in Fine Arts (Ehwa Scholarship), 1997
 
 ### Experience
-- **Candela Lighting Lab**, Seoul — Principal Consultant, 2018~
+- Candela Lighting Lab — Founder and Principal Consultant, 2018~
 - Light & Form, Daejeon — Principal Consultant
 - Gyeonggi Cultural Foundation, Yongin — Museum TF Team Requested Researcher
 - Phase2 Lighting Design, Seoul — Adviser
