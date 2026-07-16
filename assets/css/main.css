@@ -40,7 +40,7 @@ h1,h2,h3{font-weight:300;line-height:1.18;margin:0;letter-spacing:.01em}
   background:rgba(255,255,255,.9);backdrop-filter:saturate(1.4) blur(10px);
   border-bottom:1px solid var(--line);
 }
-.brand-logo{height:22px;width:auto;filter:brightness(0);opacity:.9}
+.brand-logo{height:46px;width:auto;filter:brightness(0);opacity:.9}
 .site-nav{display:flex;gap:2.6rem}
 .site-nav a{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
   color:var(--ink-2);font-weight:500;padding-bottom:3px}
@@ -152,7 +152,7 @@ h1,h2,h3{font-weight:300;line-height:1.18;margin:0;letter-spacing:.01em}
 .site-footer{border-top:1px solid var(--line);padding:clamp(2.5rem,5vw,4rem) var(--gut) 2rem;background:var(--bg-soft)}
 .foot-inner{max-width:var(--maxw);margin-inline:auto;display:flex;align-items:center;
   justify-content:space-between;gap:2rem;flex-wrap:wrap}
-.foot-brand img{height:20px;filter:brightness(0);opacity:.75}
+.foot-brand img{height:42px;filter:brightness(0);opacity:.75}
 .foot-nav{display:flex;gap:1.8rem}
 .foot-nav a{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
 .foot-nav a:hover{color:var(--ink)}
@@ -168,7 +168,7 @@ h1,h2,h3{font-weight:300;line-height:1.18;margin:0;letter-spacing:.01em}
 @media (max-width:760px){
   .nav-burger{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
   .nav-burger span{width:24px;height:1.5px;background:var(--ink);transition:.3s}
-  .site-nav{position:fixed;inset:53px 0 auto 0;flex-direction:column;gap:0;
+  .site-nav{position:fixed;inset:80px 0 auto 0;flex-direction:column;gap:0;
     background:var(--bg);border-bottom:1px solid var(--line);
     max-height:0;overflow:hidden;transition:max-height .35s ease}
   .site-nav a{padding:1.1rem var(--gut);border-bottom:1px solid var(--line)}
