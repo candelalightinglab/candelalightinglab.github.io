@@ -29,7 +29,7 @@ body_class: home
 <section class="section wrap reveal">
   <div class="section-head">
     <h2>Selected Work</h2>
-    <span class="count">Korea</span>
+    <span class="count">Korea &amp; Asia</span>
   </div>
   <div class="tiles">
     {% assign kr = site.projects | where: "region", "kr" | sort: "order" %}
@@ -40,6 +40,6 @@ body_class: home
     {% endif %}{% endunless %}{% endfor %}
   </div>
   <p style="text-align:center;margin-top:clamp(2rem,5vw,3.5rem)">
-    <a class="btn-line" href="{{ '/projects/' | relative_url }}">All projects — Korea &amp; New York</a>
+    <a class="btn-line" href="{{ '/projects/' | relative_url }}">All projects — Korea, Asia and New York</a>
   </p>
 </section>

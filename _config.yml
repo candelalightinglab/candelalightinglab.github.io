@@ -34,6 +34,7 @@ exclude:
   - _data/curation-resume-2005backup.md
   - _data/expertise-and-notes.md
   - README.md
+  - EDITING.md
   - Gemfile
   - Gemfile.lock
   - vendor
