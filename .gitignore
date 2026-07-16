@@ -1,0 +1,26 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+vendor/
+.bundle/
+Gemfile.lock
+
+# macOS
+.DS_Store
+
+# 작업용 임시 원본 (선별 전 대량 사진 등은 커밋하지 않음)
+_incoming/
+*.psd
+*.ai
+
+# 개인/업무 문서 안전장치 — 실수로 들어와도 커밋 방지
+*.hwp
+*.hwpx
+*.xls
+*.xlsx
+*.docx
+*.pptx
