@@ -3,12 +3,10 @@ layout: default
 body_class: home
 ---
 {% assign c = site.data.copy.home %}
-{% assign heroes = "seoul-craft-museum|medeonggol-garden|us-jazz-lincoln-center|us-clinton-presidential-center" | split: "|" %}
 <section class="hero" data-hero>
-  {% for slug in heroes %}
-    {% assign pr = site.projects | where: "slug", slug | first %}
+  {% for s in c.hero_slides %}
     <div class="hero-slide{% if forloop.first %} is-on{% endif %}"
-         style="background-image:url('{{ '/assets/images/projects/' | append: slug | append: '/' | append: pr.cover | relative_url }}')"></div>
+         style="background-image:url('{{ '/assets/images/projects/' | append: s.project | append: '/' | append: s.image | relative_url }}')"></div>
   {% endfor %}
   <div class="hero-scrim"></div>
   <div class="hero-cap">
@@ -17,7 +15,7 @@ body_class: home
     <p class="sub">{{ c.hero_sub }}</p>
   </div>
   <div class="hero-dots" role="tablist" aria-label="Featured projects">
-    {% for slug in heroes %}<button type="button" aria-label="Slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
+    {% for s in c.hero_slides %}<button type="button" aria-label="Slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
   </div>
 </section>
 

@@ -13,13 +13,29 @@
         <div class="lede">{{ content }}</div>
       </header>
 
-      <section class="proj-figs wrap">
-        {% for img in page.images %}
-        <figure class="full reveal">
-          <img loading="lazy" src="{{ '/assets/images/projects/' | append: page.slug | append: '/' | append: img | relative_url }}"
-               alt="{{ page.title }} — lighting {{ forloop.index }}">
-        </figure>
-        {% endfor %}
+      <section class="proj-gallery" data-gallery>
+        <div class="pg-stage">
+          {% for img in page.images %}
+          <figure class="pg-slide{% if forloop.first %} is-on{% endif %}">
+            <img {% unless forloop.first %}loading="lazy"{% endunless %} src="{{ '/assets/images/projects/' | append: page.slug | append: '/' | append: img | relative_url }}"
+                 alt="{{ page.title }} — lighting {{ forloop.index }}">
+          </figure>
+          {% endfor %}
+          {% if page.images.size > 1 %}
+          <button class="pg-arrow pg-prev" type="button" aria-label="Previous image">&#8249;</button>
+          <button class="pg-arrow pg-next" type="button" aria-label="Next image">&#8250;</button>
+          <div class="pg-counter"><span class="pg-cur">1</span>&nbsp;/&nbsp;{{ page.images.size }}</div>
+          {% endif %}
+        </div>
+        {% if page.images.size > 1 %}
+        <div class="pg-thumbs" role="tablist" aria-label="Images">
+          {% for img in page.images %}
+          <button class="pg-thumb{% if forloop.first %} is-on{% endif %}" type="button" data-i="{{ forloop.index0 }}" aria-label="Image {{ forloop.index }}">
+            <img loading="lazy" src="{{ '/assets/images/projects/' | append: page.slug | append: '/' | append: img | relative_url }}" alt="">
+          </button>
+          {% endfor %}
+        </div>
+        {% endif %}
       </section>
 
       <nav class="proj-nav">

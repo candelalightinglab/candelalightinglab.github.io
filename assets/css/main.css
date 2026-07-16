@@ -103,10 +103,33 @@ h1,h2,h3{font-weight:300;line-height:1.18;margin:0;letter-spacing:.01em}
 .proj-head h1{font-size:clamp(1.8rem,4.2vw,3.1rem);font-weight:300;letter-spacing:.06em;text-transform:uppercase}
 .proj-head .kr{color:var(--ink-2);margin-top:.7rem;font-weight:300;font-size:1.05rem}
 .proj-head .lede{color:var(--ink-2);max-width:60ch;margin:1.6rem auto 0;font-weight:300}
-.proj-figs{padding-bottom:clamp(2rem,5vw,4rem)}
-.proj-figs figure{margin:0 0 clamp(10px,1.6vw,20px)}
-.proj-figs img{width:100%}
-.proj-figs .full{max-width:1600px;margin-inline:auto}
+/* project slideshow gallery */
+.proj-gallery{padding-bottom:clamp(2rem,5vw,4rem)}
+.pg-stage{position:relative;background:#0c0c0e;height:min(78vh,760px);overflow:hidden;cursor:pointer}
+.pg-slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .5s ease;pointer-events:none}
+.pg-slide.is-on{opacity:1;pointer-events:auto}
+.pg-slide img{width:100%;height:100%;object-fit:contain}
+.pg-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:4;
+  width:52px;height:52px;border:0;border-radius:50%;cursor:pointer;
+  background:rgba(255,255,255,.14);color:#fff;font-size:1.7rem;line-height:1;
+  display:flex;align-items:center;justify-content:center;transition:background .2s;backdrop-filter:blur(4px)}
+.pg-arrow:hover{background:rgba(255,255,255,.28)}
+.pg-prev{left:clamp(10px,2vw,26px)}
+.pg-next{right:clamp(10px,2vw,26px)}
+.pg-counter{position:absolute;right:clamp(10px,2vw,26px);bottom:clamp(10px,2vw,20px);z-index:4;
+  color:#fff;font-size:.72rem;letter-spacing:.16em;background:rgba(0,0,0,.4);
+  padding:.4rem .7rem;border-radius:2px;backdrop-filter:blur(4px)}
+.pg-thumbs{display:flex;gap:8px;overflow-x:auto;padding:12px 2px 2px;scrollbar-width:thin}
+.pg-thumb{flex:0 0 auto;width:104px;height:70px;border:0;padding:0;cursor:pointer;
+  background:#0c0c0e;opacity:.5;transition:opacity .25s;outline:1px solid transparent}
+.pg-thumb img{width:100%;height:100%;object-fit:cover}
+.pg-thumb:hover{opacity:.85}
+.pg-thumb.is-on{opacity:1;outline:1px solid var(--accent)}
+@media (max-width:640px){
+  .pg-stage{height:56vh}
+  .pg-arrow{width:42px;height:42px;font-size:1.4rem}
+  .pg-thumb{width:82px;height:56px}
+}
 .proj-nav{border-top:1px solid var(--line);padding:2.2rem 0 5rem;text-align:center}
 .back-link{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
 .back-link:hover{color:var(--ink)}
