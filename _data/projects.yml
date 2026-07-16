@@ -1,13 +1,13 @@
-# 자동 생성 (assets/images/projects 기준). 각 프로젝트 카드/갤러리 데이터.
+# Auto-generated from assets/images/projects. English content.
 
 - slug: seoul-craft-museum
   title_en: "Seoul Museum of Craft Art"
-  title_kr: "서울공예박물관 · 백자 전시"
+  title_kr: "서울공예박물관"
   category: "Museum / Exhibition"
   location: "Seoul, Korea"
   region: kr
   draft: false
-  blurb: "달항아리를 어둠 속에서 백라이팅으로 띄운 백자 전시 조명. 유물 하나하나를 조각처럼 드러낸다."
+  blurb: "White-porcelain moon jars float in darkness above ink-wash murals — lighting that turns each vessel into sculpture."
   cover: seoul-craft-museum-01.jpg
   images:
     - seoul-craft-museum-01.jpg
@@ -26,7 +26,7 @@
   location: "Seoul, Korea"
   region: kr
   draft: false
-  blurb: "다크 갤러리와 한옥 모형, 프로젝션 룸을 아우르는 금융사 상설 전시 조명."
+  blurb: "A permanent exhibition on the history of Korean finance — from a dark hanok-model gallery to an immersive projection room."
   cover: shinhan-finance-museum-01.jpg
   images:
     - shinhan-finance-museum-01.jpg
@@ -43,7 +43,7 @@
   location: "Seoul, Korea"
   region: kr
   draft: false
-  blurb: "한복 갤러리와 미디어월을 중심으로 100년의 서사를 빛으로 구성한 기념관."
+  blurb: "A century of history told in light — backlit hanbok galleries and an LED media wall above the central staircase."
   cover: kyunggi-girls-centennial-01.jpg
   images:
     - kyunggi-girls-centennial-01.jpg
@@ -55,12 +55,12 @@
 
 - slug: seoul-records
   title_en: "Seoul Archival Services"
-  title_kr: "서울기록원 · 기록문화관"
+  title_kr: "서울기록원"
   category: "Exhibition"
   location: "Seoul, Korea"
   region: kr
   draft: false
-  blurb: "블루 타임라인 디지털 전시와 어두운 아카이브 공간의 대비."
+  blurb: "Glowing blue digital timelines set against dark archival galleries for the city records center."
   cover: seoul-records-01.jpg
   images:
     - seoul-records-01.jpg
@@ -76,7 +76,7 @@
   location: "Daejeon, Korea"
   region: kr
   draft: false
-  blurb: "벽돌 성당 내부, 극적인 십자가 스포트와 따뜻한 코브 조명."
+  blurb: "A brick sanctuary lit with a dramatic spotlit crucifix and a warm perimeter cove."
   cover: doryong-church-01.jpg
   images:
     - doryong-church-01.jpg
@@ -92,7 +92,7 @@
   location: "Korea"
   region: kr
   draft: false
-  blurb: "별빛 수면 위의 석재 게이트와 현무암 절벽을 조명한 야간 조경."
+  blurb: "Night landscape lighting — a stone gateway over a star-lit pool and floodlit basalt cliffs."
   cover: medeonggol-garden-01.jpg
   images:
     - medeonggol-garden-01.jpg
@@ -103,12 +103,12 @@
 
 - slug: jcc-art-center
   title_en: "JCC Art Center"
-  title_kr: "재능문화센터 (JCC)"
+  title_kr: "재능문화센터"
   category: "Arts Center"
   location: "Seoul, Korea"
   region: kr
   draft: false
-  blurb: "콘크리트 아츠센터의 야경 외관과 중정을 은은하게 드러낸 건축 조명."
+  blurb: "The dusk exterior and inner courtyard of a concrete arts center, revealed with restrained architectural light."
   cover: jcc-art-center-01.jpg
   images:
     - jcc-art-center-01.jpg
@@ -121,7 +121,7 @@
   location: "Gwacheon, Korea"
   region: kr
   draft: false
-  blurb: "야간 파사드 미디어 그래픽과 진입 광장의 조명."
+  blurb: "Nighttime facade media graphics and entrance-plaza lighting."
   cover: seoul-grand-park-01.jpg
   images:
     - seoul-grand-park-01.jpg
@@ -134,7 +134,7 @@
   location: "Korea"
   region: kr
   draft: false
-  blurb: "코브·펜던트·벽등으로 정돈한 주거 공간의 빛."
+  blurb: "Cove, pendant and wall lighting composed for quiet, warm domestic interiors."
   cover: residence-01.jpg
   images:
     - residence-01.jpg
@@ -143,12 +143,12 @@
 
 - slug: group-exhibition-unconfirmed
   title_en: "Group Exhibition"
-  title_kr: "기획 전시 (장소 확인 예정)"
+  title_kr: "기획 전시"
   category: "Exhibition"
   location: "Korea"
   region: kr
   draft: true
-  blurb: "다크 드로잉과 와이어메시 설치를 위한 전시 조명."
+  blurb: "Exhibition lighting for dark ink drawings and wire-mesh installations."
   cover: group-exhibition-unconfirmed-01.jpg
   images:
     - group-exhibition-unconfirmed-01.jpg
@@ -164,7 +164,7 @@
   location: "New York, NY"
   region: us
   draft: false
-  blurb: "앨런 룸의 무대와 맨해튼 스카이라인, 로즈홀의 컬러 조명."
+  blurb: "The Allen Room stage against the Manhattan skyline, with colour-washed halls throughout the venue."
   cover: us-jazz-lincoln-center-01.jpg
   images:
     - us-jazz-lincoln-center-01.jpg
@@ -179,7 +179,7 @@
   location: "Raleigh, NC"
   region: us
   draft: false
-  blurb: "나선형 주차 구조물의 발광 디스크 캐노피와 터미널 조명."
+  blurb: "A spiral parking structure crowned by a glowing disc canopy, with terminal and atrium lighting."
   cover: us-raleigh-durham-airport-01.jpg
   images:
     - us-raleigh-durham-airport-01.jpg
@@ -194,7 +194,7 @@
   location: "Little Rock, AR"
   region: us
   draft: false
-  blurb: "캔틸레버 유리 매스의 황혼 외관과 전시·로툰다 조명."
+  blurb: "The cantilevered glass volume at dusk, with exhibit halls and a rotunda beyond."
   cover: us-clinton-presidential-center-01.jpg
   images:
     - us-clinton-presidential-center-01.jpg
@@ -210,7 +210,7 @@
   location: "Singapore"
   region: us
   draft: false
-  blurb: "이리데센트 유리 천장과 백라이트 스크린의 파인다이닝 조명."
+  blurb: "Fine-dining interiors set under iridescent glass ceilings and backlit screens."
   cover: us-equinox-restaurants-01.jpg
   images:
     - us-equinox-restaurants-01.jpg
@@ -227,7 +227,7 @@
   location: "Dayton, OH"
   region: us
   draft: false
-  blurb: "윈터가든 아트리움과 파이버옵틱 별천장의 공연장 조명."
+  blurb: "A wintergarden atrium and a fiber-optic star ceiling for the performance hall."
   cover: us-schuster-performing-arts-01.jpg
   images:
     - us-schuster-performing-arts-01.jpg
@@ -241,7 +241,7 @@
   location: "Madison, WI"
   region: us
   draft: false
-  blurb: "오버춰 홀 오디토리엄과 오르간 벽면 조명."
+  blurb: "The Overture Hall auditorium and its organ wall."
   cover: us-overture-center-01.jpg
   images:
     - us-overture-center-01.jpg
@@ -254,7 +254,7 @@
   location: "New York, NY"
   region: us
   draft: false
-  blurb: "콜럼버스 서클에서 바라본 트윈 타워의 황혼 외관."
+  blurb: "The twin towers at dusk, seen from Columbus Circle."
   cover: us-time-warner-center-01.jpg
   images:
     - us-time-warner-center-01.jpg
