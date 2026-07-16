@@ -16,4 +16,5 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-Nighttime facade media graphics and entrance-plaza lighting.
+
+Nighttime facade and entrance lighting for the park's main gateway. Illuminated graphic panels and a lit canopy give the long elevation presence after dark, while the plaza is washed for arrival and orientation.

@@ -17,4 +17,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-A wintergarden atrium and a fiber-optic star ceiling for the performance hall.
+
+A performing-arts centre whose wintergarden atrium spirals upward around a sculptural stair, and whose Mead Theatre is capped by a fiber-optic 'star' ceiling. A glass facade glows at dusk to signal performance nights.
+
+Completed during Seungjoo Baik's years at Cline Bettridge Bernstein Lighting Design.

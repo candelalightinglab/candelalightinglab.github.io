@@ -17,4 +17,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-Cove, pendant and wall lighting composed for quiet, warm domestic interiors.
+
+A set of private residences where light is composed for everyday life — perimeter coves, sculptural pendants and wall washing that keep interiors warm and calm.
+
+Fixtures are integrated into the architecture so the sources recede and the rooms, materials and views remain the subject.

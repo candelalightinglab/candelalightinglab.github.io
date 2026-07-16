@@ -19,4 +19,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-The cantilevered glass volume at dusk, with exhibit halls and a rotunda beyond.
+
+The Clinton Presidential Center's cantilevered glass volume glows over the river at dusk. Inside, exhibit halls, the rotunda and a replica Oval Office are lit to balance display, document conservation and architectural drama.
+
+Completed during Seungjoo Baik's time at Cline Bettridge Bernstein Lighting Design.

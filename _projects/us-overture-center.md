@@ -16,4 +16,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-The Overture Hall auditorium and its organ wall.
+
+The Overture Center's concert hall is lit to serve both performance and architecture, from the auditorium and its organ wall to the warm, sculptural public spaces.
+
+A CBB-era performing-arts project.

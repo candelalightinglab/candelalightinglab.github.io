@@ -18,4 +18,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-The Allen Room stage against the Manhattan skyline, with colour-washed halls throughout the venue.
+
+A landmark performing-arts venue whose halls open onto the Manhattan skyline. In the Allen Room, the stage and its grand piano are set against a glass wall framing the city, while Rose Hall and the public spaces use colour and accent to shape each room.
+
+Completed during Seungjoo Baik's years at Cline Bettridge Bernstein Lighting Design in New York.

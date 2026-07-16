@@ -19,4 +19,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-A brick sanctuary lit with a dramatic spotlit crucifix and a warm perimeter cove.
+
+Inside this brick sanctuary, a dramatically spotlit crucifix anchors the room while a warm perimeter cove washes the masonry with a soft, even glow.
+
+Sculptural fixtures and restrained accenting give the worship space a calm, contemplative atmosphere across its lighting scenes.

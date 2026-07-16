@@ -18,4 +18,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-A spiral parking structure crowned by a glowing disc canopy, with terminal and atrium lighting.
+
+At Raleigh–Durham International, a spiral parking structure is crowned by a glowing disc canopy that reads as a beacon at dusk, with cool, even light carried through the terminal and atrium.
+
+A CBB-era project — infrastructure lighting treated with the care of an architectural landmark.

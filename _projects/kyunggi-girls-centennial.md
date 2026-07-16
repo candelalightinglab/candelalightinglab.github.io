@@ -20,4 +20,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-A century of history told in light — backlit hanbok galleries and an LED media wall above the central staircase.
+
+A commemorative hall telling a century of the school's history through light. Backlit vitrines present hanbok and period garments, while an LED media wall animates the central staircase.
+
+Museum-grade accenting on the display walls is balanced against the glow of the media surfaces, tying the historical and the contemporary into one space.

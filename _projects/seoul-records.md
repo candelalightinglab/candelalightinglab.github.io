@@ -19,4 +19,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-Glowing blue digital timelines set against dark archival galleries for the city records center.
+
+For the city's archival centre, glowing blue digital timelines are set against dark, quiet galleries. The contrast between the luminous screens and the low-lit room keeps the focus on the records themselves.
+
+Signage and wayfinding are integrated into the lighting so the visitor reads the space as a continuous archive.

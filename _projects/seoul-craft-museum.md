@@ -22,4 +22,7 @@ images:
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
      여러 문단·마크다운(**굵게**, 목록 등) 자유롭게 작성하세요.
      This description appears below the image gallery. -->
-White-porcelain moon jars float in darkness above ink-wash murals — lighting that turns each vessel into sculpture.
+
+At the Seoul Museum of Craft Art, white-porcelain moon jars are lit within near-black galleries, each vessel drawn out of the darkness against ink-wash cloud and mountain murals.
+
+The lighting is tuned to the surface of the porcelain — low ambient levels, carefully aimed accents and backlit cases — so that the objects read as luminous sculpture and the visitor's eye moves from one piece to the next.
