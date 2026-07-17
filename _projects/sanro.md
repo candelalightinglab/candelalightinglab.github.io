@@ -11,7 +11,6 @@ cover: sanro-01.jpg
 images:
   - sanro-04.jpg
   - sanro-05.jpg
-  - sanro-01.jpg
 title_ko: "산로"
 category_ko: "레스토랑"
 location_ko: "서울 · 한국"
