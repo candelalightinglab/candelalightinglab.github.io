@@ -68,17 +68,64 @@ git add -A && git commit -m "수정 내용" && git push origin main
 
 ---
 
-## ✏️ 3. 그 밖의 문구 수정
+## ✏️ 3. 페이지별 문구(텍스트) 수정 — 어디를 고치나
 
-| 무엇 | 파일 |
+대부분의 페이지 문구는 **`_data/copy.yml` 한 파일**에 모여 있습니다.
+아래에서 "화면의 어떤 문구"가 "어느 항목"인지 찾아 고치면 됩니다.
+(`kicker` = 각 제목 위의 작은 대문자 라벨, `intro` = 제목 밑 설명 문장)
+
+### 🏠 홈 (index.html + `_data/copy.yml` 의 `home:`)
+| 화면 문구 | 위치 |
 |---|---|
-| 홈 히어로 문구 / 소개 / 각 페이지 상단 문구 | `_data/copy.yml` |
-| 히어로 슬라이드 이미지 | `_data/copy.yml` 의 `home.hero_slides` |
-| 홈의 "Selected Work" 라벨 / "All projects…" 버튼 | `index.html` |
-| Projects 섹션 제목("Recent Work — Korea & Asia" 등) | `projects.html` |
-| About의 학력·경력·강의 목록 | `about.html` |
-| Expertise 5단계·시뮬레이션 문구 | `expertise.html` (문구는 `_data/copy.yml`) |
-| 연락처 이메일 | `_config.yml` 의 `email` |
-| 프로젝트 설명 | `_projects/<이름>.md` (아래쪽 본문) |
+| 첫 화면 큰 문구 "Light that reveals the object." | `copy.yml` → `home: hero_title` |
+| 그 위 작은 라벨 | `home: hero_kicker` |
+| 그 밑 한 줄 소개 | `home: hero_sub` |
+| 히어로 배경 사진(슬라이드) | `home: hero_slides` (project·image 목록) |
+| 중간 소개 제목 "Lighting for museums…" | `home: intro_heading` |
+| 그 위 라벨 "Candela Lighting Lab" | `home: intro_kicker` |
+| 소개 본문 문단 | `home: intro_body` |
+| 작품 섹션 라벨 "Selected Work" / "Korea & Asia" | **`index.html`** (`<h2>Selected Work</h2>`, `<span class="count">`) |
+| "All projects — …" 버튼 글자 | **`index.html`** (맨 아래 `btn-line`) |
 
-> 참고: `_data/` 안의 `photo-curation*`, `cv-*`, `projects-bilingual` 등은 작업 기록/참고 자료이며 사이트에는 나오지 않습니다.
+### 📁 Projects 목록 (projects.html + `copy.yml` 의 `projects:`)
+| 화면 문구 | 위치 |
+|---|---|
+| 페이지 상단 라벨 / 설명 | `projects: kicker` / `projects: intro` |
+| 섹션 제목 "Recent Work — Korea & Asia" | **`projects.html`** (`<h2>`) |
+| 섹션 제목 "New York / USA — with CBB" | **`projects.html`** (`<h2>`) |
+| 각 프로젝트 카드의 제목·분류·위치 | 해당 `_projects/<이름>.md` 의 `title`·`category`·`location` |
+
+### 🖼 개별 프로젝트 페이지 (`_projects/<이름>.md`)
+| 화면 문구 | 위치 |
+|---|---|
+| 제목 / 분류·위치 라벨 | `.md` 위쪽 `---` 안의 `title` / `category`·`location` |
+| 슬라이드 갤러리 밑 **설명 글** | `.md` 아래쪽 `---` **뒤 본문** (여러 문단·마크다운 가능) |
+
+### 👤 About (about.html + `copy.yml` 의 `about:`)
+| 화면 문구 | 위치 |
+|---|---|
+| 상단 라벨 / 설명 | `about: kicker` / `about: intro` |
+| 굵은 소개 문단(가운데) | `about: lede` |
+| 학력·경력·강의 목록 | **`about.html`** (`<dl class="cv-block">` 안의 `<dd>` 줄들) |
+
+### 🎛 Expertise (expertise.html + `copy.yml` 의 `expertise:`)
+| 화면 문구 | 위치 |
+|---|---|
+| 상단 라벨 / 설명 | `expertise: kicker` / `expertise: intro` |
+| "Calculation & simulation" 제목 / 그 밑 문장 | `expertise: sim_heading` / `expertise: sim_body` |
+| 5단계(Site Research…Construction Administration) 항목 | **`expertise.html`** (`<div class="phase">` 블록들) |
+
+### ✉️ Contact (contact.html + `copy.yml` 의 `contact:`)
+| 화면 문구 | 위치 |
+|---|---|
+| 상단 라벨 / 설명 | `contact: kicker` / `contact: intro` |
+| 카드 밑 작은 글씨(회사명·직함) | `contact: note` |
+| **이메일 주소** | `_config.yml` 의 `email` |
+
+---
+
+> **참고**
+> - `_data/copy.yml` 안에는 각 항목마다 주석(설명)이 달려 있으니 그대로 값만 바꾸면 됩니다.
+> - 마크다운(`**굵게**` 등)은 `about: lede`, 프로젝트 설명 본문에서 됩니다. 나머지 짧은 문구는 그냥 글자만 바꾸세요.
+> - `_data/` 안의 `photo-curation*`, `cv-*`, `projects-bilingual`, `company-profile*` 등은 작업 기록/참고 자료이며 사이트에는 나오지 않습니다.
+> - 문구에 `<br>`(줄바꿈), `&amp;`(&) 같은 표기가 보이면 그대로 두고 글자만 바꾸면 됩니다.
