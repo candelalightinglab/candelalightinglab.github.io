@@ -129,3 +129,45 @@ git add -A && git commit -m "수정 내용" && git push origin main
 > - 마크다운(`**굵게**` 등)은 `about: lede`, 프로젝트 설명 본문에서 됩니다. 나머지 짧은 문구는 그냥 글자만 바꾸세요.
 > - `_data/` 안의 `photo-curation*`, `cv-*`, `projects-bilingual`, `company-profile*` 등은 작업 기록/참고 자료이며 사이트에는 나오지 않습니다.
 > - 문구에 `<br>`(줄바꿈), `&amp;`(&) 같은 표기가 보이면 그대로 두고 글자만 바꾸면 됩니다.
+
+---
+
+## 🔢 4. Projects 페이지의 순서 · 표시 여부 바꾸기
+
+`https://candelalightinglab.github.io/projects/` 의 카드 순서와 노출 여부는
+**각 `_projects/<이름>.md` 파일 위쪽 `---` 안(front matter)의 3개 값**으로 정합니다.
+(사진을 건드릴 필요 없이 이 값만 바꾸면 됩니다.)
+
+```yaml
+---
+slug: sosuheon
+title: "Sosuheon"
+...
+region: kr        # ① 어느 섹션에 넣을지
+order: 14         # ② 그 섹션 안에서의 순서
+draft: false      # ③ 사이트에 보일지 / 숨길지
+...
+---
+```
+
+### ① `region` — 어느 섹션에 넣을지
+- `region: kr` → **"Recent Work — Korea & Asia"** 섹션
+- `region: us` → **"New York / USA — with CBB"** 섹션
+
+### ② `order` — 순서 (숫자가 작을수록 앞)
+- 같은 섹션(region) 안에서 **`order` 숫자 오름차순**으로 나열됩니다.
+- 예: 어떤 프로젝트를 맨 앞에 두려면 그 파일의 `order` 를 같은 섹션에서 가장 작은 값(예: `1`)으로.
+- 숫자는 연속일 필요 없습니다(1, 5, 10 처럼 띄엄띄엄 OK). 다만 **같은 섹션 안에서는 서로 다른 값**을 쓰세요(같으면 순서가 뒤섞일 수 있음).
+- 두 프로젝트 순서를 맞바꾸려면 두 파일의 `order` 숫자만 서로 바꾸면 됩니다.
+- **홈 화면 첫 페이지의 대표 6개**는 Korea 섹션에서 `order` 가 가장 작은 6개가 자동으로 표시됩니다. 홈에 넣고 싶은 프로젝트는 `order` 를 작게 주세요.
+
+### ③ `draft` — 표시 / 숨김
+- `draft: false` → 사이트에 **표시**
+- `draft: true` → **숨김** (Projects 목록·홈에서 빠지고, 개별 페이지도 만들어지지 않음). 사진·파일은 그대로 두고 나중에 다시 `false` 로 되살릴 수 있습니다.
+
+### 프로젝트를 완전히 없애려면
+- `_projects/<이름>.md` 파일을 **삭제**하면 목록·페이지에서 사라집니다.
+  (사진 폴더 `assets/images/projects/<이름>/` 는 남겨둬도 사이트엔 영향 없음. 지우려면 폴더째 삭제)
+
+> 순서는 `git push` 후 1분쯤 뒤 반영됩니다.
+> 현재 각 프로젝트의 `order` 값이 궁금하면 `_projects/` 폴더의 각 파일 위쪽을 열어 `order:` 줄을 보면 됩니다.
