@@ -6,7 +6,7 @@ category: "Residential"
 location: "Korea"
 region: kr         # kr = Korea, us = New York/USA
 order: 9
-draft: false
+draft: true
 cover: residence-01.jpg
 images:
   - residence-01.jpg
