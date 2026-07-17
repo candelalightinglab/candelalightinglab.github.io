@@ -6,7 +6,7 @@ category: "Facade"
 location: "Gwacheon, Korea"
 region: kr         # kr = Korea, us = New York/USA
 order: 8
-draft: false
+draft: true
 cover: seoul-grand-park-01.jpg
 images:
   - seoul-grand-park-01.jpg
