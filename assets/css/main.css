@@ -109,7 +109,10 @@ h1,h2,h3{font-weight:300;line-height:1.18;margin:0;letter-spacing:.01em}
 .pg-frame{position:relative;display:inline-block;max-width:100%;line-height:0}
 .pg-slide{display:none;margin:0}
 .pg-slide.is-on{display:block;animation:pgfade .5s ease}
-.pg-slide img{display:block;max-height:min(84vh,1000px);max-width:100%;width:auto;height:auto;margin:0 auto}
+/* landscape (default): fit within the viewport height */
+.pg-slide img{display:block;max-width:100%;max-height:86vh;width:auto;height:auto;margin:0 auto}
+/* portrait: size by WIDTH so it appears larger (may extend past the fold) */
+.pg-slide img.is-portrait{width:min(100%,600px);max-height:none}
 @keyframes pgfade{from{opacity:0}to{opacity:1}}
 .pg-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:4;
   width:48px;height:48px;border:0;border-radius:50%;cursor:pointer;

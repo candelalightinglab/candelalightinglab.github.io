@@ -32,6 +32,19 @@
     var curEl = g.querySelector(".pg-cur");
     var prev = g.querySelector(".pg-prev");
     var next = g.querySelector(".pg-next");
+
+    // tag each image portrait/landscape so CSS can size portrait by width
+    slides.forEach(function (fig) {
+      var img = fig.querySelector("img");
+      if (!img) return;
+      var mark = function () {
+        if (img.naturalHeight > img.naturalWidth * 1.02) img.classList.add("is-portrait");
+        else img.classList.add("is-landscape");
+      };
+      if (img.complete && img.naturalWidth) mark();
+      else img.addEventListener("load", mark);
+    });
+
     if (slides.length < 2) return;
     var i = 0;
     function show(n) {
