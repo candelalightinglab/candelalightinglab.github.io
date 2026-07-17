@@ -19,6 +19,11 @@ images:
   - sosuheon-08.jpg
   - sosuheon-09.jpg
   - sosuheon-10.jpg
+title_ko: "소수헌"
+category_ko: "한옥 · 호스피탈리티"
+location_ko: "한국"
+desc_ko: |
+  한옥을 다이닝·문화 공간으로 재해석한 소수헌. 따뜻하고 낮은 빛으로 목구조와 창호를 드러내고, 어둠 속 조각적인 펜던트 하나가 테이블을 붙잡는다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

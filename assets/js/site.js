@@ -2,6 +2,24 @@
 (function () {
   "use strict";
 
+  /* ---- language switch (EN / KO) ---- */
+  var langBtns = document.querySelectorAll(".lang-btn");
+  function syncLang() {
+    var cur = document.documentElement.getAttribute("data-lang") || "en";
+    langBtns.forEach(function (b) {
+      b.classList.toggle("is-active", b.getAttribute("data-setlang") === cur);
+    });
+  }
+  langBtns.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var l = b.getAttribute("data-setlang");
+      document.documentElement.setAttribute("data-lang", l);
+      try { localStorage.setItem("cll-lang", l); } catch (e) {}
+      syncLang();
+    });
+  });
+  syncLang();
+
   /* ---- hero carousel ---- */
   var hero = document.querySelector("[data-hero]");
   if (hero) {

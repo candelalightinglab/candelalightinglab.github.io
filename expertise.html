@@ -6,26 +6,26 @@ description: Scope of work — from site research and schematic design to constr
 ---
 {% assign c = site.data.copy.expertise %}
 <div class="wrap page-head">
-  <span class="kicker">{{ c.kicker }}</span>
-  <h1>Expertise</h1>
-  <p>{{ c.intro }}</p>
+  <span class="kicker">{% include t.html en=c.kicker ko=c.kicker_ko %}</span>
+  <h1>{% include t.html en="Expertise" ko="전문분야" %}</h1>
+  <p>{% include t.html en=c.intro ko=c.intro_ko %}</p>
 </div>
 
 <div class="wrap prose reveal">
   <div class="phases">
-    <div class="phase"><span class="n">01</span><h3>Site Research</h3><ul><li>Trend analysis</li><li>Site analysis</li></ul></div>
-    <div class="phase"><span class="n">02</span><h3>Schematic Design</h3><ul><li>Lighting concept consultation</li><li>Luminance level set-up</li><li>Basic calculation</li><li>Fixture options</li></ul></div>
-    <div class="phase"><span class="n">03</span><h3>Design Development</h3><ul><li>Computer calculation</li><li>Mock-ups</li><li>Design details</li><li>Reflected ceiling plan</li><li>Luminaire schedule</li></ul></div>
-    <div class="phase"><span class="n">04</span><h3>Construction Documents</h3><ul><li>Lighting specifications</li><li>Section &amp; lighting plan</li><li>Control diagram</li><li>Pricing · Bidding</li></ul></div>
-    <div class="phase"><span class="n">05</span><h3>Construction Administration</h3><ul><li>Aiming</li><li>Energy evaluation</li><li>Submittal comments</li><li>Control set-up</li></ul></div>
+    <div class="phase"><span class="n">01</span><h3>{% include t.html en="Site Research" ko="현장 조사" %}</h3><ul><li>Trend analysis</li><li>Site analysis</li></ul></div>
+    <div class="phase"><span class="n">02</span><h3>{% include t.html en="Schematic Design" ko="계획 설계" %}</h3><ul><li>Lighting concept consultation</li><li>Luminance level set-up</li><li>Basic calculation</li><li>Fixture options</li></ul></div>
+    <div class="phase"><span class="n">03</span><h3>{% include t.html en="Design Development" ko="기본 설계" %}</h3><ul><li>Computer calculation</li><li>Mock-ups</li><li>Design details</li><li>Reflected ceiling plan</li><li>Luminaire schedule</li></ul></div>
+    <div class="phase"><span class="n">04</span><h3>{% include t.html en="Construction Documents" ko="실시 설계" %}</h3><ul><li>Lighting specifications</li><li>Section &amp; lighting plan</li><li>Control diagram</li><li>Pricing · Bidding</li></ul></div>
+    <div class="phase"><span class="n">05</span><h3>{% include t.html en="Construction Administration" ko="시공 관리" %}</h3><ul><li>Aiming</li><li>Energy evaluation</li><li>Submittal comments</li><li>Control set-up</li></ul></div>
   </div>
 
-  <h2>{{ c.sim_heading }}</h2>
-  <p>{{ c.sim_body }}</p>
+  <h2>{% include t.html en=c.sim_heading ko=c.sim_heading_ko %}</h2>
+  <p>{% include t.html en=c.sim_body ko=c.sim_body_ko %}</p>
   <div class="expertise-figs">
-    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-illuminance-simulation-overview.png' | relative_url }}" alt="3D illuminance simulation"><figcaption>3D rendering + false-colour illuminance simulation</figcaption></figure>
-    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-target-illuminance.png' | relative_url }}" alt="Target illuminance table"><figcaption>Target illuminance (lux)</figcaption></figure>
-    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-color-temperature.png' | relative_url }}" alt="Colour temperature comparison"><figcaption>Colour temperature, 3000–5000K</figcaption></figure>
-    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-color-rendering-cri.png' | relative_url }}" alt="Colour rendering index comparison"><figcaption>Colour rendering index (CRI 90 / 95)</figcaption></figure>
+    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-illuminance-simulation-overview.png' | relative_url }}" alt="3D illuminance simulation"><figcaption>{% include t.html en="3D rendering + false-colour illuminance simulation" ko="3D 렌더링 + False-color 조도 시뮬레이션" %}</figcaption></figure>
+    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-target-illuminance.png' | relative_url }}" alt="Target illuminance table"><figcaption>{% include t.html en="Target illuminance (lux)" ko="타겟 조도 (lux)" %}</figcaption></figure>
+    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-color-temperature.png' | relative_url }}" alt="Colour temperature comparison"><figcaption>{% include t.html en="Colour temperature, 3000–5000K" ko="색온도 3000–5000K" %}</figcaption></figure>
+    <figure><img loading="lazy" src="{{ '/assets/images/expertise/expertise-color-rendering-cri.png' | relative_url }}" alt="Colour rendering index comparison"><figcaption>{% include t.html en="Colour rendering index (CRI 90 / 95)" ko="연색성 (CRI 90 / 95)" %}</figcaption></figure>
   </div>
 </div>

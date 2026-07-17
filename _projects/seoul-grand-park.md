@@ -11,6 +11,11 @@ cover: seoul-grand-park-01.jpg
 images:
   - seoul-grand-park-01.jpg
   - seoul-grand-park-02.jpg
+title_ko: "서울대공원"
+category_ko: "파사드"
+location_ko: "과천 · 한국"
+desc_ko: |
+  공원 정문의 야간 파사드·진입 조명. 발광 그래픽 패널과 밝힌 캐노피가 긴 입면에 존재감을 주고, 광장은 도착과 방향 안내를 위해 은은히 밝혔다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

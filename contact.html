@@ -6,15 +6,15 @@ description: Get in touch with Candela Lighting Lab for architectural and museum
 ---
 {% assign c = site.data.copy.contact %}
 <div class="wrap page-head">
-  <span class="kicker">{{ c.kicker }}</span>
-  <h1>Contact</h1>
-  <p>{{ c.intro }}</p>
+  <span class="kicker">{% include t.html en=c.kicker ko=c.kicker_ko %}</span>
+  <h1>{% include t.html en="Contact" ko="연락처" %}</h1>
+  <p>{% include t.html en=c.intro ko=c.intro_ko %}</p>
 </div>
 
 <div class="wrap prose reveal">
   <div class="contact-card">
-    <span class="kicker">Email</span>
+    <span class="kicker">{% include t.html en="Email" ko="이메일" %}</span>
     <a class="mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
-    <p class="note">{{ c.note }}</p>
+    <p class="note">{% include t.html en=c.note ko=c.note_ko %}</p>
   </div>
 </div>

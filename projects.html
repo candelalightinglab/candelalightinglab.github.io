@@ -6,15 +6,15 @@ description: Museum, exhibition, architectural and landscape lighting projects i
 ---
 {% assign c = site.data.copy.projects %}
 <div class="wrap page-head">
-  <span class="kicker">{{ c.kicker }}</span>
-  <h1>Projects</h1>
-  <p>{{ c.intro }}</p>
+  <span class="kicker">{% include t.html en=c.kicker ko=c.kicker_ko %}</span>
+  <h1>{% include t.html en="Projects" ko="프로젝트" %}</h1>
+  <p>{% include t.html en=c.intro ko=c.intro_ko %}</p>
 </div>
 
 <section class="section wrap reveal" style="padding-top:clamp(1rem,3vw,2rem)">
   <div class="section-head">
-    <h2>Recent Work — Korea & Asia </h2>
-    <span class="count">Museum / Exhibition / Architecture</span>
+    <h2>{% include t.html en="Recent Work — Korea &amp; Asia" ko="국내 · 아시아 최신작" %}</h2>
+    <span class="count">{% include t.html en="Museum / Exhibition / Architecture" ko="박물관 · 전시 · 건축" %}</span>
   </div>
   <div class="tiles">
     {% assign kr = site.projects | where: "region", "kr" | sort: "order" %}
@@ -24,7 +24,7 @@ description: Museum, exhibition, architectural and landscape lighting projects i
 
 <section class="section wrap reveal">
   <div class="section-head">
-    <h2>New York / USA — with CBB</h2>
+    <h2>{% include t.html en="New York / USA — with CBB" ko="뉴욕 · 미국 — CBB 시절" %}</h2>
     <span class="count">Cline Bettridge Bernstein Lighting Design</span>
   </div>
   <div class="tiles">

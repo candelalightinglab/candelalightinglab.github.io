@@ -6,22 +6,22 @@ description: Seungjoo Baik — Architectural Lighting Designer, Founder and Prin
 ---
 {% assign c = site.data.copy.about %}
 <div class="wrap page-head">
-  <span class="kicker">{{ c.kicker }}</span>
-  <h1>About</h1>
-  <p>{{ c.intro }}</p>
+  <span class="kicker">{% include t.html en=c.kicker ko=c.kicker_ko %}</span>
+  <h1>{% include t.html en="About" ko="소개" %}</h1>
+  <p>{% include t.html en=c.intro ko=c.intro_ko %}</p>
 </div>
 
 <div class="wrap-narrow prose reveal">
-  <div class="lede-p">{{ c.lede | markdownify }}</div>
+  <div class="lede-p">{% include tmd.html en=c.lede ko=c.lede_ko %}</div>
 
   <div class="two-col" style="margin-top:clamp(2.5rem,6vw,4rem)">
     <dl class="cv-block">
-      <dt>Education</dt>
+      <dt>{% include t.html en="Education" ko="학력" %}</dt>
       <dd>Parsons School of Design — MFA in Lighting (Parsons Scholarship), 2000</dd>
       <dd>Parsons School of Design — AAS in Interior Design, 1998</dd>
       <dd>Ewha Womans University — BFA in Fine Arts (Ewha Scholarship), 1997</dd>
 
-      <dt>Experience</dt>
+      <dt>{% include t.html en="Experience" ko="경력" %}</dt>
       <dd>Candela Lighting Lab — Founder and Principal Consultant, 2018–</dd>
       <dd>Light &amp; Form, Daejeon — Principal Consultant</dd>
       <dd>Gyeonggi Cultural Foundation, Yongin — Museum TF, Researcher</dd>
@@ -30,7 +30,7 @@ description: Seungjoo Baik — Architectural Lighting Designer, Founder and Prin
       <dd>Cooley Monato Studio, New York — Staff Designer</dd>
     </dl>
     <dl class="cv-block">
-      <dt>Teaching</dt>
+      <dt>{% include t.html en="Teaching" ko="강의" %}</dt>
       <dd>Ewha Womans University, Seoul — Invited Instructor</dd>
       <dd>Seoul Museum of Craft Art — Invited Instructor</dd>
       <dd>KAIST, Daejeon — Instructor (ISSS Culture Classes)</dd>
@@ -43,6 +43,6 @@ description: Seungjoo Baik — Architectural Lighting Designer, Founder and Prin
   </div>
 
   <p style="text-align:center;margin-top:clamp(2.5rem,6vw,4rem)">
-    <a class="btn-line" href="{{ '/projects/' | relative_url }}">See the work</a>
+    <a class="btn-line" href="{{ '/projects/' | relative_url }}">{% include t.html en="See the work" ko="작업 보기" %}</a>
   </p>
 </div>

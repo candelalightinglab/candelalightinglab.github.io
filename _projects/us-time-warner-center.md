@@ -10,6 +10,11 @@ draft: false
 cover: us-time-warner-center-01.jpg
 images:
   - us-time-warner-center-01.jpg
+title_ko: "타임워너 센터"
+category_ko: "기업"
+location_ko: "미국 뉴욕"
+desc_ko: |
+  콜럼버스 서클의 트윈 타워. 센트럴파크 자락의 복합시설을 황혼녘 빛나는 모습으로 담았다. CBB 재직 중 뉴욕 작업.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

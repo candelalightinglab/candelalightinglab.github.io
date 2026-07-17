@@ -10,9 +10,9 @@ body_class: home
   {% endfor %}
   <div class="hero-scrim"></div>
   <div class="hero-cap">
-    <span class="kicker">{{ c.hero_kicker }}</span>
-    <h1>{{ c.hero_title }}</h1>
-    <p class="sub">{{ c.hero_sub }}</p>
+    <span class="kicker">{% include t.html en=c.hero_kicker ko=c.hero_kicker_ko %}</span>
+    <h1>{% include t.html en=c.hero_title ko=c.hero_title_ko %}</h1>
+    <p class="sub">{% include t.html en=c.hero_sub ko=c.hero_sub_ko %}</p>
   </div>
   <div class="hero-dots" role="tablist" aria-label="Featured projects">
     {% for s in c.hero_slides %}<button type="button" aria-label="Slide {{ forloop.index }}" aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>{% endfor %}
@@ -20,16 +20,16 @@ body_class: home
 </section>
 
 <section class="intro wrap-narrow reveal">
-  <span class="kicker">{{ c.intro_kicker }}</span>
-  <h2>{{ c.intro_heading }}</h2>
-  <p>{{ c.intro_body }}</p>
-  <a class="btn-line" href="{{ '/about/' | relative_url }}">About the studio</a>
+  <span class="kicker">{% include t.html en=c.intro_kicker ko=c.intro_kicker_ko %}</span>
+  <h2>{% include t.html en=c.intro_heading ko=c.intro_heading_ko %}</h2>
+  <p>{% include t.html en=c.intro_body ko=c.intro_body_ko %}</p>
+  <a class="btn-line" href="{{ '/about/' | relative_url }}">{% include t.html en="About the studio" ko="스튜디오 소개" %}</a>
 </section>
 
 <section class="section wrap reveal">
   <div class="section-head">
-    <h2>Selected Work</h2>
-    <span class="count">Korea &amp; Asia</span>
+    <h2>{% include t.html en="Selected Work" ko="선별 작업" %}</h2>
+    <span class="count">{% include t.html en="Korea &amp; Asia" ko="국내 · 아시아" %}</span>
   </div>
   <div class="tiles">
     {% assign kr = site.projects | where: "region", "kr" | sort: "order" %}
@@ -40,6 +40,6 @@ body_class: home
     {% endif %}{% endunless %}{% endfor %}
   </div>
   <p style="text-align:center;margin-top:clamp(2rem,5vw,3.5rem)">
-    <a class="btn-line" href="{{ '/projects/' | relative_url }}">All projects — Korea, Asia and New York</a>
+    <a class="btn-line" href="{{ '/projects/' | relative_url }}">{% include t.html en="All projects — Korea, Asia and New York" ko="전체 프로젝트 — 국내 · 아시아 · 뉴욕" %}</a>
   </p>
 </section>

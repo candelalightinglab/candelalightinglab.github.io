@@ -15,6 +15,11 @@ images:
   - us-equinox-restaurants-04.jpg
   - us-equinox-restaurants-05.jpg
   - us-equinox-restaurants-06.jpg
+title_ko: "에퀴녹스 레스토랑"
+category_ko: "호스피탈리티"
+location_ko: "싱가포르"
+desc_ko: |
+  이리데센트 유리 천장과 백라이트 격자 스크린 아래의 파인다이닝. 반짝임·발광·따뜻한 악센트를 겹쳐 각 공간을 특별한 자리로 만들었다. CBB 시절 호스피탈리티 작업.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

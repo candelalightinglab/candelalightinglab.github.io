@@ -4,11 +4,18 @@
   </a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
   <label for="nav-toggle" class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></label>
-  <nav class="site-nav" aria-label="Primary">
-    {% assign p = page.url %}
-    <a href="{{ '/projects/' | relative_url }}"  {% if p contains '/projects' %}class="is-active"{% endif %}>Projects</a>
-    <a href="{{ '/expertise/' | relative_url }}" {% if p contains '/expertise' %}class="is-active"{% endif %}>Expertise</a>
-    <a href="{{ '/about/' | relative_url }}"     {% if p contains '/about' %}class="is-active"{% endif %}>About</a>
-    <a href="{{ '/contact/' | relative_url }}"   {% if p contains '/contact' %}class="is-active"{% endif %}>Contact</a>
-  </nav>
+  <div class="nav-right">
+    <nav class="site-nav" aria-label="Primary">
+      {% assign p = page.url %}
+      <a href="{{ '/projects/' | relative_url }}"  {% if p contains '/projects' %}class="is-active"{% endif %}>{% include t.html en="Projects" ko="프로젝트" %}</a>
+      <a href="{{ '/expertise/' | relative_url }}" {% if p contains '/expertise' %}class="is-active"{% endif %}>{% include t.html en="Expertise" ko="전문분야" %}</a>
+      <a href="{{ '/about/' | relative_url }}"     {% if p contains '/about' %}class="is-active"{% endif %}>{% include t.html en="About" ko="소개" %}</a>
+      <a href="{{ '/contact/' | relative_url }}"   {% if p contains '/contact' %}class="is-active"{% endif %}>{% include t.html en="Contact" ko="연락처" %}</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-setlang="en">EN</button>
+      <span class="lang-sep">·</span>
+      <button type="button" class="lang-btn" data-setlang="ko">KO</button>
+    </div>
+  </div>
 </header>

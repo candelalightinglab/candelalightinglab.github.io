@@ -36,6 +36,11 @@ images:
   - alo-dosan-park-25.jpg
   - alo-dosan-park-26.jpg
   - alo-dosan-park-27.jpg
+title_ko: "ALO 도산공원 플래그십"
+category_ko: "리테일 · 플래그십"
+location_ko: "서울 · 한국"
+desc_ko: |
+  도산공원의 ALO 플래그십 스토어. 밤이면 목재 루버 파사드가 나무 사이로 은은히 빛나고, 내부는 상품과 재료, 브랜드 특유의 차분한 갤러리 무드를 조명으로 다듬었다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

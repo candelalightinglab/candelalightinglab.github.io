@@ -20,6 +20,11 @@ images:
   - kaist-museum-art-09.jpg
   - kaist-museum-art-10.jpg
   - kaist-museum-art-11.jpg
+title_ko: "카이스트미술관"
+category_ko: "박물관 · 갤러리"
+location_ko: "대전 · 한국"
+desc_ko: |
+  카이스트 미술관. 천장에 작품을 매다는 전시를 포함해 회화·조각을 위한 갤러리 조명으로, 눈부심 없는 균질한 빛이 작품과 노출 콘크리트 건축에 시선을 모은다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

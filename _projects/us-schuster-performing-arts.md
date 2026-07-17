@@ -12,6 +12,11 @@ images:
   - us-schuster-performing-arts-01.jpg
   - us-schuster-performing-arts-02.jpg
   - us-schuster-performing-arts-03.jpg
+title_ko: "슈스터 공연예술센터"
+category_ko: "공연예술"
+location_ko: "미국 오하이오"
+desc_ko: |
+  윈터가든 아트리움이 조각적 계단을 따라 솟아오르고, 미드 시어터는 파이버옵틱 별천장으로 덮였다. 공연 밤이면 유리 파사드가 빛난다. CBB 재직 중 작업.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

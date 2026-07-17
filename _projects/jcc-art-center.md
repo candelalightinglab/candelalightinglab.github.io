@@ -11,6 +11,11 @@ cover: jcc-art-center-01.jpg
 images:
   - jcc-art-center-01.jpg
   - jcc-art-center-02.jpg
+title_ko: "재능문화센터 JCC"
+category_ko: "아츠센터"
+location_ko: "서울 · 한국"
+desc_ko: |
+  콘크리트 아츠센터. 황혼녘 외관이 안에서부터 은은히 빛나고, 중정에서는 절제된 건축조명이 노출 콘크리트와 식재를 드러낸다. 빛을 아껴 건물의 재료와 기하가 스스로 말하게 했다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

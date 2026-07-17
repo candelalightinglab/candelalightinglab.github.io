@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ site.lang }}" data-lang="en">
 <head>
   {% include head.html %}
 </head>
@@ -8,8 +8,8 @@
   <main id="main">
     <article class="project">
       <header class="proj-head wrap">
-        <span class="kicker">{{ page.category }} · {{ page.location }}</span>
-        <h1>{{ page.title }}</h1>
+        <span class="kicker">{% include t.html en=page.category ko=page.category_ko %} · {% include t.html en=page.location ko=page.location_ko %}</span>
+        <h1>{% include t.html en=page.title ko=page.title_ko %}</h1>
       </header>
 
       <section class="proj-gallery" data-gallery>
@@ -39,15 +39,13 @@
         {% endif %}
       </section>
 
-      {% assign desc = content | strip %}
-      {% if desc != "" %}
       <section class="proj-desc wrap-narrow reveal">
-        {{ content }}
+        <div class="lang lang-en">{{ content }}</div>
+        <div class="lang lang-ko">{{ page.desc_ko | markdownify }}</div>
       </section>
-      {% endif %}
 
       <nav class="proj-nav">
-        <a class="back-link" href="{{ '/projects/' | relative_url }}">← All projects</a>
+        <a class="back-link" href="{{ '/projects/' | relative_url }}">{% include t.html en="← All projects" ko="← 전체 프로젝트" %}</a>
       </nav>
     </article>
   </main>

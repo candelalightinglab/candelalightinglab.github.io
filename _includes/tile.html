@@ -3,7 +3,7 @@
   <img loading="lazy" src="{{ '/assets/images/projects/' | append: pr.slug | append: '/' | append: pr.cover | relative_url }}" alt="{{ pr.title }}">
   <span class="tile-scrim"></span>
   <span class="tile-cap">
-    <span class="t">{{ pr.title }}</span>
-    <span class="meta">{{ pr.category }} · {{ pr.location }}</span>
+    <span class="t">{% include t.html en=pr.title ko=pr.title_ko %}</span>
+    <span class="meta">{% include t.html en=pr.category ko=pr.category_ko %} · {% include t.html en=pr.location ko=pr.location_ko %}</span>
   </span>
 </a>

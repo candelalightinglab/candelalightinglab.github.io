@@ -12,6 +12,11 @@ images:
   - residence-01.jpg
   - residence-02.jpg
   - residence-03.jpg
+title_ko: "주택"
+category_ko: "주거"
+location_ko: "한국"
+desc_ko: |
+  일상의 삶을 위한 주거 조명. 코브·펜던트·벽등을 건축에 통합해 광원은 숨기고 공간·재료·풍경이 주인공이 되도록 했다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.

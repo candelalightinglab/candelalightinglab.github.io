@@ -14,6 +14,11 @@ images:
   - seoul-records-03.jpg
   - seoul-records-04.jpg
   - seoul-records-05.jpg
+title_ko: "서울기록원"
+category_ko: "전시"
+location_ko: "서울 · 한국"
+desc_ko: |
+  시의 기록원을 위한 조명. 파랗게 빛나는 디지털 타임라인을 어둡고 차분한 갤러리와 대비시켜 기록물 자체에 시선이 모이도록 했다.
 ---
 
 <!-- 아래 문장이 슬라이드 갤러리 밑에 표시되는 프로젝트 설명입니다.
