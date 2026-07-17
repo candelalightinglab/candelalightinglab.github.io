@@ -13,7 +13,7 @@ home:
   hero_slides:
     - { project: jcc-art-center,      image: jcc-art-center-01.jpg }
     - { project: shinhan-finance-museum, image: shinhan-finance-museum-01.jpg }
-    - { project: medeonggol-garden,           image: medeonggol-garden-01.jpg }
+    - { project: kaist-museum-art,           image: kaist-museum-art-04.jpg }
     - { project: kyunggi-girls-centennial,          image: kyunggi-girls-centennial-03.jpg }
   intro_kicker: "Candela Lighting Lab"
   intro_heading: "Lighting for museums, exhibitions and architecture."
