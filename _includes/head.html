@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
-<script>/* set language before render to avoid flash */(function(){try{var l=localStorage.getItem("cll-lang");if(!l){l=((navigator.language||navigator.userLanguage||"en").slice(0,2)==="ko")?"ko":"en";}document.documentElement.setAttribute("data-lang",l);}catch(e){document.documentElement.setAttribute("data-lang","en");}})();</script>
+<script>/* set language before render to avoid flash — default English, remember toggle */(function(){try{var l=localStorage.getItem("cll-lang")||"en";document.documentElement.setAttribute("data-lang",l);}catch(e){document.documentElement.setAttribute("data-lang","en");}})();</script>
 {% capture page_title %}{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}{% endcapture %}
 <title>{{ page_title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
