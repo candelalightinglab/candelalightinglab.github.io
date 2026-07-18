@@ -191,11 +191,23 @@ html:not(.unlocked) body{overflow:hidden}
 .prose p{color:var(--ink-2);font-weight:300}
 .lede-p{font-size:1.15rem;line-height:1.75;color:var(--ink);font-weight:300;max-width:64ch;margin-inline:auto;text-align:center}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);margin-top:1rem}
+/* about — approach / principles */
+.approach{margin:clamp(3rem,7vw,5rem) 0 0;text-align:center;border-top:1px solid var(--line);padding-top:clamp(2.5rem,6vw,4rem)}
+.approach .kicker{display:block;margin-bottom:1.2rem}
+.approach-lead{font-size:1.12rem;line-height:1.75;color:var(--ink);font-weight:300;max-width:60ch;margin:0 auto}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,3vw,2.6rem);
+  margin-top:clamp(2.5rem,6vw,3.6rem);text-align:left}
+.principle .pn{font-size:.7rem;letter-spacing:.2em;color:var(--accent);font-weight:600}
+.principle h3{font-size:1.08rem;font-weight:500;margin:.5rem 0 .7rem;letter-spacing:.01em}
+.principle p{font-size:.92rem;line-height:1.65;color:var(--ink-2);font-weight:300;margin:0}
+@media (max-width:720px){.principles{grid-template-columns:1fr;gap:1.8rem}}
 .cv-block dt{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);
   font-weight:600;margin-top:1.8rem}
 .cv-block dd{margin:.5rem 0 0;color:var(--ink-2);font-weight:300;line-height:1.5}
 .cv-block dd b,.cv-block dd strong{color:var(--ink);font-weight:500}
 
+.expertise-lead{font-size:clamp(1.2rem,2.7vw,1.65rem);line-height:1.5;font-weight:300;
+  color:var(--ink);max-width:42ch;margin:0 auto}
 /* expertise phases */
 .phases{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
   border-top:1px solid var(--line);border-left:1px solid var(--line);margin:2.4rem 0}
