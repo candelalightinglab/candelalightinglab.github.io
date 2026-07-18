@@ -2,6 +2,37 @@
 (function () {
   "use strict";
 
+  /* ---- private preview gate ---- */
+  var gate = document.getElementById("site-gate");
+  if (gate) {
+    var gform = document.getElementById("gate-form");
+    var gpw = document.getElementById("gate-pw");
+    var gerr = document.getElementById("gate-err");
+    var ghash = gate.getAttribute("data-pwhash");
+    var unlock = function () {
+      try { localStorage.setItem("cll-unlocked", "1"); } catch (e) {}
+      document.documentElement.classList.add("unlocked");
+    };
+    var fail = function () { gerr.classList.add("show"); gpw.value = ""; gpw.focus(); };
+    if (gform) {
+      gform.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var val = gpw.value || "";
+        if (window.crypto && crypto.subtle && window.TextEncoder) {
+          crypto.subtle.digest("SHA-256", new TextEncoder().encode(val)).then(function (buf) {
+            var hex = Array.prototype.map.call(new Uint8Array(buf), function (b) {
+              return b.toString(16).padStart(2, "0");
+            }).join("");
+            hex === ghash ? unlock() : fail();
+          });
+        } else { fail(); }
+      });
+    }
+    if (!document.documentElement.classList.contains("unlocked") && gpw) {
+      try { gpw.focus(); } catch (e) {}
+    }
+  }
+
   /* ---- language switch (EN / KO) ---- */
   var langBtns = document.querySelectorAll(".lang-btn");
   function syncLang() {
