@@ -1,0 +1,83 @@
+# 참여 프로젝트 전체 목록 (About 페이지 "Selected Projects"). 출처: 전시조명디자이너의 일과 세계 PPT.
+# 카테고리별 en/ko. 사진이 있는 프로젝트는 갤러리(_projects)에서 별도로 소개됩니다.
+
+- cat: "Museums & Galleries"
+  cat_ko: "박물관 · 미술관"
+  items:
+    - { en: "Vietnam Military History Museum, Hanoi — in progress", ko: "베트남 군사역사 박물관, 하노이 — 진행중" }
+    - { en: "Doam Art Center (Seoul Arts High School), Seoul", ko: "서울예술고등학교 도암아트홀, 서울" }
+    - { en: "Korea Museum of Financial History (Shinhan Bank), Seoul", ko: "신한은행 금융박물관, 서울" }
+    - { en: "Print Bakery, Seoul", ko: "프린트 베이커리, 서울" }
+    - { en: "Seoul Museum of Craft Art, Seoul", ko: "서울공예박물관, 서울" }
+    - { en: "JCC (Jaeneung Culture Center), Seoul", ko: "재능문화센터 JCC, 서울" }
+    - { en: "Kyunggido Children's Museum, Yongin", ko: "경기도 어린이 박물관, 용인" }
+    - { en: "National Palace Museum of Korea — children's space (plan), Seoul", ko: "국립고궁박물관 어린이 체험공간 (계획), 서울" }
+    - { en: "Clinton Presidential Center, Little Rock, AK", ko: "클린턴 대통령 기념관, 리틀록 AK" }
+    - { en: "New York Digital Museum (plan), New York", ko: "뉴욕 디지털 박물관 (계획), 뉴욕" }
+    - { en: "New Orleans Museum of Art, New Orleans", ko: "뉴올리언즈 주립미술관, 뉴올리언즈" }
+
+- cat: "Performing Arts"
+  cat_ko: "공연"
+  items:
+    - { en: "Jazz at Lincoln Center, New York", ko: "재즈 앳 링컨센터, 뉴욕" }
+    - { en: "Benjamin & Marian Schuster Performing Arts Center, Dayton, OH", ko: "슈스터 공연예술센터, 데이턴 OH" }
+    - { en: "Overture Center for the Arts, Madison, WI", ko: "오버춰 예술공연센터, 매디슨 WI" }
+    - { en: "Orange County Performing Arts Center, CA", ko: "오렌지 카운티 예술공연센터, CA" }
+
+- cat: "Environment & Landscape"
+  cat_ko: "환경 · 조경"
+  items:
+    - { en: "Seoul Grand Park — main information centre, Gwacheon", ko: "서울대공원 종합안내소 경관, 과천" }
+    - { en: "Seoul Museum of Craft Art — grounds, Seoul", ko: "서울공예박물관 전체 경관, 서울" }
+    - { en: "Raleigh–Durham Airport Operations Center, NC", ko: "랄리더햄 국제공항, NC" }
+    - { en: "Raleigh–Durham Airport Parking Garage 4, NC", ko: "랄리더햄 국제공항 주차 빌딩, NC" }
+    - { en: "Tear Drop Park, New York", ko: "티어드롭 공원, 뉴욕" }
+
+- cat: "Government & Public"
+  cat_ko: "정부 · 공공기관"
+  items:
+    - { en: "Doryong Catholic Church, Daejeon", ko: "도룡동 천주교회, 대전" }
+    - { en: "New York 9/11 Restoration Project, New York", ko: "뉴욕시 911 재건 프로젝트, 뉴욕" }
+    - { en: "Lilly Building 38, New York", ko: "릴리 빌딩 38, 뉴욕" }
+    - { en: "Manhattan Family Court, New York", ko: "맨하탄 가정법원, 뉴욕" }
+    - { en: "New York Stock Exchange, New York", ko: "뉴욕 주식거래소, 뉴욕" }
+    - { en: "Office of the Chief Medical Examiner, New York", ko: "국립과학수사연구소, 뉴욕" }
+
+- cat: "Education & Institutional"
+  cat_ko: "교육기관"
+  items:
+    - { en: "Grinnell College Student Center, Grinnell, IA", ko: "그리넬 대학교 학생회관, IA" }
+    - { en: "Yale University Engineering Research Building, New Haven, CT", ko: "예일대학교 기계연구빌딩, CT" }
+    - { en: "Columbia University, Barnard College Auditorium, New York", ko: "콜럼비아대학교 버나드 강당, 뉴욕" }
+    - { en: "Philips Exeter Academy, Exeter, NH", ko: "필립스 엑서터 아카데미, NH" }
+
+- cat: "Corporate"
+  cat_ko: "기업"
+  items:
+    - { en: "Edificio Repsol, Buenos Aires", ko: "이디피시오 렙솔 빌딩, 부에노스아이레스" }
+    - { en: "Cypress Park West, New York", ko: "사이프레스 파크 웨스트, 뉴욕" }
+    - { en: "1251 Avenue of the Americas, New York", ko: "1251 아메리카스 애비뉴, 뉴욕" }
+    - { en: "731 Lexington Avenue, New York", ko: "731 렉싱턴 애비뉴, 뉴욕" }
+    - { en: "Census Bureau, New York", ko: "센서스 조사 연구소, 뉴욕" }
+    - { en: "Morgan Stanley, Harrison / White Plains, NY", ko: "모건 스탠리 해리슨, 뉴욕" }
+    - { en: "MSK Research, New York", ko: "MSK 연구소, 뉴욕" }
+
+- cat: "Retail & Hospitality"
+  cat_ko: "소비 · 상업"
+  items:
+    - { en: "Equinox Restaurants, Singapore", ko: "에퀴녹스 레스토랑, 싱가포르" }
+    - { en: "Aveda Showroom, Nationwide (USA)", ko: "아베다 쇼룸, 전미" }
+    - { en: "Lancôme Showroom, Nationwide (USA)", ko: "랑콤 쇼룸, 전미" }
+    - { en: "Giorgio Armani Outlet Store, Nationwide (USA)", ko: "조르지오 아르마니 아울렛 매장, 전미" }
+
+- cat: "Residences"
+  cat_ko: "주택"
+  items:
+    - { en: "Dogok-dong Residence, Seoul", ko: "도곡동 주택, 서울" }
+    - { en: "Hagi-dong Residence, Daejeon", ko: "하기동 주택, 대전" }
+    - { en: "Doryong-dong Residence, Daejeon", ko: "도룡동 주택, 대전" }
+    - { en: "Bangok-dong Residence, Sejong", ko: "반곡동 주택, 세종" }
+    - { en: "Zankel Pool House, Long Island, NY", ko: "잔켈 풀 하우스, 롱아일랜드 NY" }
+    - { en: "Fila Residence, South Hampton, NY", ko: "필라 주택, 사우스햄튼 NY" }
+    - { en: "1185 Park Avenue Residence, New York", ko: "1185 파크 애비뉴 주택, 뉴욕" }
+    - { en: "Heinz Residence, 169 Hudson Street, New York", ko: "하인즈 주택, 뉴욕" }

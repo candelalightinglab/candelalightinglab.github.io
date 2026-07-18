@@ -30,6 +30,7 @@ description: Seungjoo Baik — Architectural Lighting Designer, Founder and Prin
       <dd>Parsons School of Design — MFA in Lighting (Parsons Scholarship), 2000</dd>
       <dd>Parsons School of Design — AAS in Interior Design, 1998</dd>
       <dd>Ewha Womans University — BFA in Fine Arts (Ewha Scholarship), 1997</dd>
+      <dd>Yewon School &amp; Seoul Arts High School</dd>
 
       <dt>{% include t.html en="Experience" ko="경력" %}</dt>
       <dd>Candela Lighting Lab — Founder and Principal Consultant, 2018–</dd>
@@ -51,6 +52,20 @@ description: Seungjoo Baik — Architectural Lighting Designer, Founder and Prin
       <dd>Parsons School of Design, New York — Invited Instructor</dd>
     </dl>
   </div>
+
+  <section class="proj-list">
+    <h2 class="proj-list-head">{% include t.html en="Selected Projects" ko="참여 프로젝트" %}</h2>
+    <div class="proj-cats">
+      {% for g in site.data.cv_projects %}
+      <div class="proj-cat">
+        <h3>{% include t.html en=g.cat ko=g.cat_ko %}</h3>
+        <ul>
+          {% for it in g.items %}<li>{% include t.html en=it.en ko=it.ko %}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
 
   <p style="text-align:center;margin-top:clamp(2.5rem,6vw,4rem)">
     <a class="btn-line" href="{{ '/projects/' | relative_url }}">{% include t.html en="See the work" ko="작업 보기" %}</a>
