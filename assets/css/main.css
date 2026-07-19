@@ -201,6 +201,26 @@ html:not(.unlocked) body{overflow:hidden}
 .principle h3{font-size:1.08rem;font-weight:500;margin:.5rem 0 .7rem;letter-spacing:.01em}
 .principle p{font-size:.92rem;line-height:1.65;color:var(--ink-2);font-weight:300;margin:0}
 @media (max-width:720px){.principles{grid-template-columns:1fr;gap:1.8rem}}
+/* approach page — section subtitles + design process */
+.sec-sub{display:block;text-align:center;font-size:.95rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:600;color:var(--ink);border-top:1px solid var(--line);
+  margin-top:clamp(3rem,7vw,5rem);padding-top:clamp(2.5rem,6vw,4rem);margin-bottom:clamp(1.8rem,4vw,2.8rem)}
+.principles-lg .principle h3{font-size:1.18rem}
+.process-intro{text-align:center;color:var(--ink-2);font-weight:300;max-width:62ch;
+  margin:0 auto clamp(2.5rem,5vw,3.6rem)}
+.process-step{display:grid;grid-template-columns:1fr 1.55fr;gap:clamp(1.5rem,4vw,3.4rem);
+  align-items:center;margin-bottom:clamp(2.6rem,5vw,4.2rem)}
+.process-step:nth-child(even) .ps-text{order:2}
+.ps-n{font-size:.72rem;letter-spacing:.2em;color:var(--accent);font-weight:600}
+.ps-text h3{font-size:1.18rem;font-weight:500;margin:.5rem 0 .8rem;letter-spacing:.01em}
+.ps-text p{color:var(--ink-2);font-weight:300;font-size:.96rem;line-height:1.75;margin:0}
+.ps-fig{margin:0}
+.ps-fig img{width:100%;border:1px solid var(--line);background:var(--bg-soft);display:block}
+.ps-fig figcaption{font-size:.74rem;letter-spacing:.04em;color:var(--ink-3);padding-top:.6rem}
+@media (max-width:720px){
+  .process-step{grid-template-columns:1fr;gap:1rem}
+  .process-step:nth-child(even) .ps-text{order:0}
+}
 .cv-block dt{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3);
   font-weight:600;margin-top:1.8rem}
 .cv-block dd{margin:.5rem 0 0;color:var(--ink-2);font-weight:300;line-height:1.5}

@@ -44,6 +44,12 @@ expertise:
   kicker_ko: "업무 범위"
   intro: "Architectural, museum and exhibition lighting, and lighting consulting. We define target illuminance, colour temperature and colour rendering precisely, and design light suited to the character of each space."
   intro_ko: "건축조명 · 박물관/전시조명 · 라이팅 컨설팅. 목표 조도·색온도·연색성을 정밀하게 정의하고, 공간의 성격에 맞는 빛을 설계합니다."
+  philosophy_sub: "Design Philosophy"
+  philosophy_sub_ko: "디자인 철학"
+  process_sub: "Lighting Design Process"
+  process_sub_ko: "조명설계 과정"
+  process_intro: "Every project moves through four stages — from setting target illuminance and direction, to on-site aiming — treating light as a material to be measured and calculated."
+  process_intro_ko: "모든 프로젝트는 네 단계로 진행됩니다 — 타겟 조도와 연출 방향 설정에서 현장 에이밍까지, 빛을 측정하고 계산하는 물질로 다룹니다."
   # ── Approach / 접근 (전시조명디자이너의 일과 세계 기반) ──
   approach_kicker: "Approach"
   approach_kicker_ko: "접근"
