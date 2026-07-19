@@ -247,6 +247,7 @@ html:not(.unlocked) body{overflow:hidden}
 .proj-cat ul{list-style:none;margin:0;padding:0}
 .proj-cat li{font-size:.9rem;line-height:1.5;color:var(--ink-2);font-weight:300;
   padding:.28rem 0;border-bottom:1px solid var(--line)}
+.proj-cat li b,.proj-cat li strong{color:var(--ink);font-weight:500}
 @media (max-width:640px){.proj-cats{columns:1}}
 /* expertise phases */
 .phases{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
