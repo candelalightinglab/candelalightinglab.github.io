@@ -160,7 +160,7 @@ html:not(.unlocked) body{overflow:hidden}
 .pg-thumb:hover{opacity:.85}
 .pg-thumb.is-on{opacity:1;outline:1px solid var(--accent)}
 /* approach — process slideshow captions */
-.proc-caps{position:relative;text-align:center;margin-top:1.4rem;min-height:6rem}
+.proc-caps{position:relative;text-align:center;margin:0 0 1.5rem;min-height:5.5rem}
 .proc-cap{display:none}
 .proc-cap.is-on{display:block;animation:pgfade .4s ease}
 .proc-cap .pc-n{font-size:.72rem;letter-spacing:.2em;color:var(--accent);font-weight:600}
