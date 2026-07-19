@@ -78,6 +78,7 @@
   document.querySelectorAll("[data-gallery]").forEach(function (g) {
     var slides = Array.prototype.slice.call(g.querySelectorAll(".pg-slide"));
     var thumbs = Array.prototype.slice.call(g.querySelectorAll(".pg-thumb"));
+    var caps = Array.prototype.slice.call(g.querySelectorAll(".proc-cap"));
     var curEl = g.querySelector(".pg-cur");
     var prev = g.querySelector(".pg-prev");
     var next = g.querySelector(".pg-next");
@@ -103,6 +104,7 @@
         var on = k === i; t.classList.toggle("is-on", on);
         if (on && t.scrollIntoView) t.scrollIntoView({ inline: "nearest", block: "nearest" });
       });
+      caps.forEach(function (c, k) { c.classList.toggle("is-on", k === i); });
       if (curEl) curEl.textContent = i + 1;
     }
     if (prev) prev.addEventListener("click", function () { show(i - 1); });

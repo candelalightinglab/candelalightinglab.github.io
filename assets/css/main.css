@@ -159,6 +159,13 @@ html:not(.unlocked) body{overflow:hidden}
 .pg-thumb img{width:100%;height:100%;object-fit:cover}
 .pg-thumb:hover{opacity:.85}
 .pg-thumb.is-on{opacity:1;outline:1px solid var(--accent)}
+/* approach — process slideshow captions */
+.proc-caps{position:relative;text-align:center;margin-top:1.4rem;min-height:6rem}
+.proc-cap{display:none}
+.proc-cap.is-on{display:block;animation:pgfade .4s ease}
+.proc-cap .pc-n{font-size:.72rem;letter-spacing:.2em;color:var(--accent);font-weight:600}
+.proc-cap .pc-t{display:block;font-size:1.15rem;font-weight:500;margin:.35rem 0 .55rem;letter-spacing:.01em}
+.proc-cap .pc-d{display:block;color:var(--ink-2);font-weight:300;font-size:.96rem;line-height:1.6;max-width:54ch;margin:0 auto}
 @media (max-width:640px){
   .pg-slide img{max-height:74vh}
   .pg-arrow{width:40px;height:40px;font-size:1.3rem}

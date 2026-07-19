@@ -21,44 +21,41 @@ description: The studio's design philosophy and its four-stage lighting design p
   </div>
 </section>
 
-<!-- Lighting Design Process -->
+<!-- Lighting Design Process (slideshow) -->
 <section class="wrap prose reveal process">
   <span class="kicker sec-sub">{% include t.html en=c.process_sub ko=c.process_sub_ko %}</span>
   <p class="process-intro">{% include t.html en=c.process_intro ko=c.process_intro_ko %}</p>
 
-  <div class="process-step">
-    <div class="ps-text">
-      <span class="ps-n">01</span>
-      <h3>{% include t.html en="Schematic Design" ko="기본계획" %}</h3>
-      <p>{% include t.html en="Setting target illuminance and the direction of the lighting — reading the site, its surroundings and the character of the exhibition." ko="타겟 조도와 연출 방향을 설정합니다 — 사이트와 주변 환경, 전시의 성격을 읽는 단계." %}</p>
+  <div class="proc-gallery" data-gallery>
+    <div class="pg-stage">
+      <div class="pg-frame">
+        <figure class="pg-slide is-on"><img src="{{ '/assets/images/approach/process-slide-01.jpg' | relative_url }}" alt="Schematic design — site analysis"></figure>
+        <figure class="pg-slide"><img loading="lazy" src="{{ '/assets/images/approach/process-slide-02.jpg' | relative_url }}" alt="Schematic design — colour temperature, CRI, fixtures"></figure>
+        <figure class="pg-slide"><img loading="lazy" src="{{ '/assets/images/approach/process-slide-03.jpg' | relative_url }}" alt="Design development — illuminance analysis"></figure>
+        <figure class="pg-slide"><img loading="lazy" src="{{ '/assets/images/approach/process-slide-04.jpg' | relative_url }}" alt="Design development — 3D and false-colour simulation"></figure>
+        <figure class="pg-slide"><img loading="lazy" src="{{ '/assets/images/approach/process-slide-05.jpg' | relative_url }}" alt="Construction documents — drawings and specifications"></figure>
+        <figure class="pg-slide"><img loading="lazy" src="{{ '/assets/images/approach/process-slide-06.jpg' | relative_url }}" alt="Construction administration — the completed exhibition"></figure>
+        <button class="pg-arrow pg-prev" type="button" aria-label="Previous">&#8249;</button>
+        <button class="pg-arrow pg-next" type="button" aria-label="Next">&#8250;</button>
+        <div class="pg-counter"><span class="pg-cur">1</span>&nbsp;/&nbsp;6</div>
+      </div>
     </div>
-    <figure class="ps-fig"><img loading="lazy" src="{{ '/assets/images/approach/process-1-schematic.png' | relative_url }}" alt="Schematic design — site and illuminance analysis"><figcaption>{% include t.html en="Site &amp; context analysis · illuminance zoning" ko="사이트·주변 분석 · 조도 조닝" %}</figcaption></figure>
-  </div>
 
-  <div class="process-step">
-    <div class="ps-text">
-      <span class="ps-n">02</span>
-      <h3>{% include t.html en="Design Development" ko="기본설계" %}</h3>
-      <p>{% include t.html en="3D modeling, fixture selection, illuminance calculation and computer simulation — verifying the intended light before anything is built." ko="3D 모델링, 등기구 선정, 조도 계산, 컴퓨터 시뮬레이션 — 시공 전에 의도한 빛을 검증합니다." %}</p>
+    <div class="proc-caps">
+      <div class="proc-cap is-on"><span class="pc-n">01</span><span class="pc-t">{% include t.html en="Schematic Design" ko="기본계획" %}</span><span class="pc-d">{% include t.html en="Site &amp; context analysis; target illuminance and the direction of the lighting." ko="사이트·주변 분석, 타겟 조도와 연출 방향 설정." %}</span></div>
+      <div class="proc-cap"><span class="pc-n">01</span><span class="pc-t">{% include t.html en="Schematic Design" ko="기본계획" %}</span><span class="pc-d">{% include t.html en="Colour temperature and colour rendering study; selection of the fixtures." ko="색온도·연색성 검토와 사용 등기구 선정." %}</span></div>
+      <div class="proc-cap"><span class="pc-n">02</span><span class="pc-t">{% include t.html en="Design Development" ko="기본설계" %}</span><span class="pc-d">{% include t.html en="Illuminance simulation, circulation and operating-hour analysis." ko="조도 시뮬레이션, 동선·시간대별 운영 분석." %}</span></div>
+      <div class="proc-cap"><span class="pc-n">02</span><span class="pc-t">{% include t.html en="Design Development" ko="기본설계" %}</span><span class="pc-d">{% include t.html en="3D rendering and false-colour illuminance verification." ko="3D 렌더링과 False-color 조도 검증." %}</span></div>
+      <div class="proc-cap"><span class="pc-n">03</span><span class="pc-t">{% include t.html en="Construction Documents" ko="실시설계" %}</span><span class="pc-d">{% include t.html en="CAD drawings, luminaire schedule and specifications." ko="CAD 도면, 등기구 사양서·시방서 작성." %}</span></div>
+      <div class="proc-cap"><span class="pc-n">04</span><span class="pc-t">{% include t.html en="Construction Administration" ko="설계감리" %}</span><span class="pc-d">{% include t.html en="Aiming on site — the exhibition, completed." ko="현장 에이밍 — 완성된 전시." %}</span></div>
     </div>
-    <figure class="ps-fig"><img loading="lazy" src="{{ '/assets/images/approach/process-2-development.png' | relative_url }}" alt="Design development — illuminance simulation"><figcaption>{% include t.html en="3D rendering + false-colour illuminance simulation" ko="3D 렌더링 + False-color 조도 시뮬레이션" %}</figcaption></figure>
-  </div>
 
-  <div class="process-step">
-    <div class="ps-text">
-      <span class="ps-n">03</span>
-      <h3>{% include t.html en="Construction Documents" ko="실시설계" %}</h3>
-      <p>{% include t.html en="CAD drawings, luminaire schedules and specifications — the complete set of documents that guides construction." ko="CAD 도면, 등기구 사양서·시방서 등 설계도서를 작성합니다 — 시공을 이끄는 완전한 문서 세트." %}</p>
+    <div class="pg-thumbs" role="tablist" aria-label="Process steps">
+      {% for n in (1..6) %}
+      <button class="pg-thumb{% if n == 1 %} is-on{% endif %}" type="button" data-i="{{ forloop.index0 }}" aria-label="Slide {{ n }}">
+        <img loading="lazy" src="{{ '/assets/images/approach/process-slide-0' | append: n | append: '.jpg' | relative_url }}" alt="">
+      </button>
+      {% endfor %}
     </div>
-    <figure class="ps-fig"><img loading="lazy" src="{{ '/assets/images/approach/process-3-documents.png' | relative_url }}" alt="Construction documents — lighting layout plan"><figcaption>{% include t.html en="Reflected ceiling / lighting layout plan" ko="전등 배치 평면도" %}</figcaption></figure>
-  </div>
-
-  <div class="process-step">
-    <div class="ps-text">
-      <span class="ps-n">04</span>
-      <h3>{% include t.html en="Construction Administration" ko="설계감리" %}</h3>
-      <p>{% include t.html en="Aiming on site and verifying that the installation matches the drawings and fixture specifications — where calculation becomes experience." ko="현장 에이밍, 도면과 시공 내역의 차이·등기구 사양 준수 여부를 확인합니다 — 계산이 경험이 되는 단계." %}</p>
-    </div>
-    <figure class="ps-fig"><img loading="lazy" src="{{ '/assets/images/approach/process-4-administration.png' | relative_url }}" alt="Construction administration — aiming, the finished result"><figcaption>{% include t.html en="Aiming on site — the finished result" ko="현장 에이밍 — 완성된 결과" %}</figcaption></figure>
   </div>
 </section>
