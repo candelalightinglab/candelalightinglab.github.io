@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#ffffff">
 <meta name="robots" content="noindex, nofollow">
-<script>/* language + private-preview gate: run before render to avoid flash */(function(){try{var l=localStorage.getItem("cll-lang")||"en";document.documentElement.setAttribute("data-lang",l);}catch(e){document.documentElement.setAttribute("data-lang","en");}try{if(localStorage.getItem("cll-unlocked")==="1"){document.documentElement.classList.add("unlocked");}}catch(e){}})();</script>
+<script>/* language preference: run before render to avoid flash */(function(){try{var l=localStorage.getItem("cll-lang")||"en";document.documentElement.setAttribute("data-lang",l);}catch(e){document.documentElement.setAttribute("data-lang","en");}})();</script>
 {% capture page_title %}{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}{% endcapture %}
 <title>{{ page_title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
