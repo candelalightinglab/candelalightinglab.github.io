@@ -5,7 +5,7 @@ title_kr: "클린턴 대통령 기념관"        # reference only (not shown)
 category: "Museum"
 location: "Little Rock, AR"
 region: us         # kr = Korea, us = New York/USA
-order: 12
+order: 3
 draft: false
 cover: us-clinton-presidential-center-01.jpg
 images:

@@ -5,7 +5,7 @@ title_kr: "슈스터 공연예술센터"        # reference only (not shown)
 category: "Performing Arts"
 location: "Dayton, OH"
 region: us         # kr = Korea, us = New York/USA
-order: 14
+order: 5
 draft: false
 cover: us-schuster-performing-arts-01.jpg
 images:

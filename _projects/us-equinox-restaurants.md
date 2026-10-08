@@ -5,7 +5,7 @@ title_kr: "에퀴녹스 레스토랑"        # reference only (not shown)
 category: "Hospitality"
 location: "Singapore"
 region: us         # kr = Korea, us = New York/USA
-order: 13
+order: 4
 draft: false
 cover: us-equinox-restaurants-01.jpg
 images:

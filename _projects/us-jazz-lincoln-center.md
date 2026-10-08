@@ -5,7 +5,7 @@ title_kr: "링컨 재즈 센터"        # reference only (not shown)
 category: "Performing Arts"
 location: "New York, NY"
 region: us         # kr = Korea, us = New York/USA
-order: 10
+order: 1
 draft: false
 cover: us-jazz-lincoln-center-01.jpg
 images:

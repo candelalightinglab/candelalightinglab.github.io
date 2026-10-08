@@ -5,7 +5,7 @@ title_kr: "오버춰 예술센터"        # reference only (not shown)
 category: "Performing Arts"
 location: "Madison, WI"
 region: us         # kr = Korea, us = New York/USA
-order: 15
+order: 6
 draft: false
 cover: us-overture-center-01.jpg
 images:

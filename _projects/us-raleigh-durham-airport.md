@@ -5,7 +5,7 @@ title_kr: "랄리더햄 국제공항"        # reference only (not shown)
 category: "Airport / Environment"
 location: "Raleigh, NC"
 region: us         # kr = Korea, us = New York/USA
-order: 11
+order: 2
 draft: false
 cover: us-raleigh-durham-airport-01.jpg
 images:
