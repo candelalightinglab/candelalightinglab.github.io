@@ -19,6 +19,31 @@ images:
   - sosuheon-08.jpg
   - sosuheon-09.jpg
   - sosuheon-10.jpg
+  - sosuheon-11.jpg
+  - sosuheon-12.jpg
+  - sosuheon-13.jpg
+  - sosuheon-14.jpg
+  - sosuheon-15.jpg
+  - sosuheon-16.jpg
+  - sosuheon-17.jpg
+  - sosuheon-18.jpg
+  - sosuheon-19.jpg
+  - sosuheon-20.jpg
+  - sosuheon-21.jpg
+  - sosuheon-22.jpg
+  - sosuheon-23.jpg
+  - sosuheon-24.jpg
+  - sosuheon-25.jpg
+  - sosuheon-26.jpg
+  - sosuheon-27.jpg
+  - sosuheon-28.jpg
+  - sosuheon-29.jpg
+  - sosuheon-30.jpg
+  - sosuheon-31.jpg
+  - sosuheon-32.jpg
+  - sosuheon-33.jpg
+  - sosuheon-34.jpg
+  - sosuheon-35.jpg
 title_ko: "소수헌"
 category_ko: "한옥 · 호스피탈리티"
 location_ko: "한국"
