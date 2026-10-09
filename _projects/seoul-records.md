@@ -6,7 +6,7 @@ category: "Exhibition"
 location: "Seoul, Korea"
 region: kr         # kr = Korea, us = New York/USA
 order: 4
-draft: false
+draft: true
 cover: seoul-records-01.jpg
 images:
   - seoul-records-01.jpg
