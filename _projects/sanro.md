@@ -6,7 +6,7 @@ category: "Restaurant"
 location: "Seoul, Korea"
 region: kr         # kr = Korea/Asia
 order: 12
-draft: false
+draft: true
 cover: sanro-01.jpg
 images:
   - sanro-01.jpg
