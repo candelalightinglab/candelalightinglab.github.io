@@ -1,9 +1,9 @@
 # CandelaLightingLab — Website
 
 백승주 소장(2018–)의 건축·박물관/전시 조명 디자인 스튜디오 홈페이지.
-커스텀 Jekyll + GitHub Pages. 다크·미니멀 테마, 영문 위주.
+커스텀 Jekyll + Cloudflare Pages. 다크·미니멀 테마, 영문 위주.
 
-- 배포 예정: https://candelalightinglab.github.io
+- 웹사이트: https://candelalightinglab.com
 - 계획 원본: Dropbox `…/Joo/CandelaLightingLab_웹사이트_계획.md`
 
 ## 구조
@@ -32,3 +32,21 @@ bundle exec jekyll serve
 1. 회사 정식 명칭 확정 (+ 로고)
 2. 공개 가능한 연락처
 3. GitHub 계정 `candelalightinglab` + `candelalightinglab.github.io` 저장소 + PAT
+
+## Deployment
+
+Every push to `main` builds Jekyll and deploys `_site` to the Cloudflare Pages
+project `candelalightinglab` using `.github/workflows/cloudflare-pages.yml`.
+Changes go live after the workflow finishes, usually within a few minutes.
+The workflow can also be run manually from the GitHub Actions tab.
+
+The repository secret `CLOUDFLARE_API_TOKEN` must have Cloudflare Pages Edit
+permission for the deployment account. Ruby is pinned in `.ruby-version` and
+dependencies in `Gemfile.lock`.
+
+To deploy locally after `bundle install`:
+
+```bash
+bundle exec jekyll build
+npx wrangler@4.149.0 pages deploy _site --project-name=candelalightinglab --branch=main
+```

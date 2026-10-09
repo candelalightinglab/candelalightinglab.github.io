@@ -7,7 +7,7 @@ _site/
 # Ruby / Bundler
 vendor/
 .bundle/
-Gemfile.lock
+.wrangler/
 
 # macOS
 .DS_Store

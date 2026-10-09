@@ -6,8 +6,7 @@ description: >-
 author: Seungjoo Baik
 email: candelalightinglab@gmail.com
 
-# candelalightinglab.github.io (user/org page, served from root)
-url: "https://candelalightinglab.github.io"
+url: "https://candelalightinglab.com"
 baseurl: ""
 lang: en
 
