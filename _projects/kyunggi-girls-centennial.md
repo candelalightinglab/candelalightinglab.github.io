@@ -16,6 +16,14 @@ images:
   - kyunggi-girls-centennial-05.jpg
   - kyunggi-girls-centennial-06.jpg
   - kyunggi-girls-centennial-07.jpg
+  - kyunggi-girls-centennial-08.jpg
+  - kyunggi-girls-centennial-09.jpg
+  - kyunggi-girls-centennial-10.jpg
+  - kyunggi-girls-centennial-11.jpg
+  - kyunggi-girls-centennial-12.jpg
+  - kyunggi-girls-centennial-13.jpg
+  - kyunggi-girls-centennial-14.jpg
+  - kyunggi-girls-centennial-15.jpg
 title_ko: "경기여고 100주년기념관"
 category_ko: "박물관"
 location_ko: "서울 · 한국"
