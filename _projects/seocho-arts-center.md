@@ -14,6 +14,7 @@ images:
   - seocho-arts-center-03.jpg
   - seocho-arts-center-04.jpg
   - seocho-arts-center-05.jpg
+  - seocho-arts-center-06.jpg
 title_ko: "서초문화예술회관"
 category_ko: "공연예술"
 location_ko: "서울 · 한국"
