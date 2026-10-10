@@ -17,6 +17,31 @@ images:
   - seoul-craft-museum-06.jpg
   - seoul-craft-museum-07.jpg
   - seoul-craft-museum-08.jpg
+  - seoul-craft-museum-09.jpg
+  - seoul-craft-museum-10.jpg
+  - seoul-craft-museum-11.jpg
+  - seoul-craft-museum-12.jpg
+  - seoul-craft-museum-13.jpg
+  - seoul-craft-museum-14.jpg
+  - seoul-craft-museum-15.jpg
+  - seoul-craft-museum-16.jpg
+  - seoul-craft-museum-17.jpg
+  - seoul-craft-museum-18.jpg
+  - seoul-craft-museum-19.jpg
+  - seoul-craft-museum-20.jpg
+  - seoul-craft-museum-21.jpg
+  - seoul-craft-museum-22.jpg
+  - seoul-craft-museum-23.jpg
+  - seoul-craft-museum-24.jpg
+  - seoul-craft-museum-25.jpg
+  - seoul-craft-museum-26.jpg
+  - seoul-craft-museum-27.jpg
+  - seoul-craft-museum-28.jpg
+  - seoul-craft-museum-29.jpg
+  - seoul-craft-museum-30.jpg
+  - seoul-craft-museum-31.jpg
+  - seoul-craft-museum-32.jpg
+  - seoul-craft-museum-33.jpg
 title_ko: "서울공예박물관"
 category_ko: "박물관 · 전시"
 location_ko: "서울 · 한국"
