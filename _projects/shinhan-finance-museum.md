@@ -5,7 +5,7 @@ title_kr: "신한은행 금융박물관"        # reference only (not shown)
 category: "Museum"
 location: "Seoul, Korea"
 region: kr         # kr = Korea, us = New York/USA
-order: 2
+order: 12
 draft: false
 cover: shinhan-finance-museum-01.jpg
 images:
