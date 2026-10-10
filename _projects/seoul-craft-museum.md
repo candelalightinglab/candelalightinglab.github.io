@@ -40,8 +40,6 @@ images:
   - seoul-craft-museum-29.jpg
   - seoul-craft-museum-30.jpg
   - seoul-craft-museum-31.jpg
-  - seoul-craft-museum-32.jpg
-  - seoul-craft-museum-33.jpg
 title_ko: "서울공예박물관"
 category_ko: "박물관 · 전시"
 location_ko: "서울 · 한국"
