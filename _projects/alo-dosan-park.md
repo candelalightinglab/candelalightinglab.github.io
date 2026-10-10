@@ -139,38 +139,6 @@ images:
   - alo-dosan-park-128.jpg
   - alo-dosan-park-129.jpg
   - alo-dosan-park-130.jpg
-  - alo-dosan-park-131.jpg
-  - alo-dosan-park-132.jpg
-  - alo-dosan-park-133.jpg
-  - alo-dosan-park-134.jpg
-  - alo-dosan-park-135.jpg
-  - alo-dosan-park-136.jpg
-  - alo-dosan-park-137.jpg
-  - alo-dosan-park-138.jpg
-  - alo-dosan-park-139.jpg
-  - alo-dosan-park-140.jpg
-  - alo-dosan-park-141.jpg
-  - alo-dosan-park-142.jpg
-  - alo-dosan-park-143.jpg
-  - alo-dosan-park-144.jpg
-  - alo-dosan-park-145.jpg
-  - alo-dosan-park-146.jpg
-  - alo-dosan-park-147.jpg
-  - alo-dosan-park-148.jpg
-  - alo-dosan-park-149.jpg
-  - alo-dosan-park-150.jpg
-  - alo-dosan-park-151.jpg
-  - alo-dosan-park-152.jpg
-  - alo-dosan-park-153.jpg
-  - alo-dosan-park-154.jpg
-  - alo-dosan-park-155.jpg
-  - alo-dosan-park-156.jpg
-  - alo-dosan-park-157.jpg
-  - alo-dosan-park-158.jpg
-  - alo-dosan-park-159.jpg
-  - alo-dosan-park-160.jpg
-  - alo-dosan-park-161.jpg
-  - alo-dosan-park-162.jpg
 title_ko: "ALO 도산공원 플래그십"
 category_ko: "리테일 · 플래그십"
 location_ko: "서울 · 한국"
