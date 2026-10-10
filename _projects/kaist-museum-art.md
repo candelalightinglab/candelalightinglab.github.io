@@ -12,14 +12,6 @@ images:
   - kaist-museum-art-01.jpg
   - kaist-museum-art-02.jpg
   - kaist-museum-art-03.jpg
-  - kaist-museum-art-04.jpg
-  - kaist-museum-art-05.jpg
-  - kaist-museum-art-06.jpg
-  - kaist-museum-art-07.jpg
-  - kaist-museum-art-08.jpg
-  - kaist-museum-art-09.jpg
-  - kaist-museum-art-10.jpg
-  - kaist-museum-art-11.jpg
 title_ko: "카이스트미술관"
 category_ko: "박물관 · 갤러리"
 location_ko: "대전 · 한국"
