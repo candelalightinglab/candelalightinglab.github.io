@@ -5,7 +5,7 @@ title_kr: "서울대공원"        # reference only (not shown)
 category: "Facade"
 location: "Gwacheon, Korea"
 region: kr         # kr = Korea, us = New York/USA
-order: 8
+order: 15
 draft: false
 cover: seoul-grand-park-01.jpg
 images:
