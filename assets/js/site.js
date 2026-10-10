@@ -53,12 +53,24 @@
     var prev = g.querySelector(".pg-prev");
     var next = g.querySelector(".pg-next");
 
-    // tag orientation + preload every slide into cache for instant navigation
+    // Fetch only the slides near the one on screen. Preloading every slide
+    // meant opening a 130-photo project downloaded ~50 MB before the first
+    // arrow press; warming a few ahead keeps arrow navigation instant.
+    var AHEAD = 3, BEHIND = 1, warmed = {};
+    function warm(k) {
+      k = (k % slides.length + slides.length) % slides.length;
+      if (warmed[k]) return;
+      warmed[k] = true;
+      var img = slides[k].querySelector("img");
+      var src = img && img.getAttribute("src");
+      if (src) { var pre = new Image(); pre.src = src; }
+    }
+    function warmAround(n) { for (var d = -BEHIND; d <= AHEAD; d++) warm(n + d); }
+
+    // tag orientation once each slide's own image has loaded
     slides.forEach(function (fig) {
       var img = fig.querySelector("img");
       if (!img) return;
-      var src = img.getAttribute("src");
-      if (src) { var pre = new Image(); pre.src = src; }   // warm the cache
       var mark = function () {
         if (img.naturalHeight > img.naturalWidth * 1.02) img.classList.add("is-portrait");
         else img.classList.add("is-landscape");
@@ -78,6 +90,7 @@
       });
       caps.forEach(function (c, k) { c.classList.toggle("is-on", k === i); });
       if (curEl) curEl.textContent = i + 1;
+      warmAround(i);
     }
     if (prev) prev.addEventListener("click", function () { show(i - 1); });
     if (next) next.addEventListener("click", function () { show(i + 1); });
