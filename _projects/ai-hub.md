@@ -6,7 +6,7 @@ category: "Workplace"
 location: "Seoul, Korea"
 region: kr         # kr = Korea/Asia
 order: 10
-draft: false
+draft: true
 cover: ai-hub-01.jpg
 images:
   - ai-hub-01.jpg
