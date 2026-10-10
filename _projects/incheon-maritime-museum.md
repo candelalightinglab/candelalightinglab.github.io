@@ -5,7 +5,7 @@ title_kr: ""        # reference only
 category: "Museum"
 location: "Incheon, Korea"
 region: kr         # kr = Korea/Asia
-order: 15
+order: 4
 draft: false
 cover: incheon-maritime-museum-01.jpg
 images:
