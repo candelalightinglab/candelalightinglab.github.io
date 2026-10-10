@@ -5,7 +5,7 @@ title_kr: "재능문화센터"        # reference only (not shown)
 category: "Arts Center"
 location: "Seoul, Korea"
 region: kr         # kr = Korea, us = New York/USA
-order: 7
+order: 14
 draft: false
 cover: jcc-art-center-01.jpg
 images:
