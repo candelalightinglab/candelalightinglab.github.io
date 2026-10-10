@@ -6,7 +6,7 @@ category: "Architecture"
 location: "Daejeon, Korea"
 region: kr         # kr = Korea, us = New York/USA
 order: 5
-draft: false
+draft: true
 cover: doryong-church-01.jpg
 images:
   - doryong-church-01.jpg
