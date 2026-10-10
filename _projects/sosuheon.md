@@ -5,7 +5,7 @@ title_kr: ""        # reference only
 category: "Hanok / Hospitality"
 location: "Korea"
 region: kr         # kr = Korea/Asia
-order: 14
+order: 9
 draft: false
 cover: sosuheon-01.jpg
 images:
