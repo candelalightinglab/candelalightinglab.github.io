@@ -5,7 +5,7 @@ title_kr: "서울도서관 디지털기록원"        # reference only (not show
 category: "Exhibition"
 location: "Seoul, Korea"
 region: kr         # kr = Korea, us = New York/USA
-order: 4
+order: 7
 draft: false
 cover: seoul-library-digital-archive-01.jpg
 images:
