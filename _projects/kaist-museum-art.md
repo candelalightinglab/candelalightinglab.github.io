@@ -5,7 +5,7 @@ title_kr: ""        # reference only
 category: "Museum / Gallery"
 location: "Daejeon, Korea"
 region: kr         # kr = Korea/Asia
-order: 16
+order: 3
 draft: false
 cover: kaist-museum-art-01.jpg
 images:
